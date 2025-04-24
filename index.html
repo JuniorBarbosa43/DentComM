@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentComm - Marketing para Dentistas</title>
+  <link rel="icon" href="midia/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+<!-- NAVBAR PREMIUM RESPONSIVA -->
+<header class="navbar">
+    <div class="container nav-content">
+      <img src="midia/Icon-logo.png" alt="Logo">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul class="nav-links" id="navMenu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <button id="langToggle" class="lang-btn">ES</button>
+          <li><a href="#contato" class="btn-secondary small">Contato</a></li>
+        </ul>        
+      </nav>
+    </div>
+  </header>
+
+
+<!-- HERO SECTION COM VÍDEO -->
+<section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="midia/efeitos.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+    <div class="container">
+      <h1>Marketing para <span>Dentistas e Professores</span> de Odontologia</h1>
+      <p>Especialistas em atrair mais pacientes ou alunos com estratégias de marketing personalizadas.</p>
+      <a href="#contato" class="btn-primary">Solicitar Diagnóstico Gratuito</a>
+    </div>
+  </section>
+  
+  <!-- SOBRE A DENTCOMM -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <h2>Sobre a DentComm</h2>
+      <p>
+        A DentComm nasceu para revolucionar o marketing odontológico, conectando dentistas clínicos e acadêmicos aos pacientes ou alunos ideais. Atuamos como uma extensão estratégica do seu negócio, com foco em previsibilidade de resultados e autoridade de marca. Nosso time é formado por especialistas em tráfego, conteúdo, automações e design — tudo para transformar sua presença digital em uma máquina de atração.
+      </p>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <h2>Por que a DentComm?</h2>
+      <div class="benefit-grid">
+        <div class="card">
+          <img src="midia/Ícone previsibilidade.png" alt="Ícone previsibilidade" />
+          <h3>Previsibilidade</h3>
+          <p>Organizamos sua clínica com um retorno financeiro previsível.</p>
+        </div>
+        <div class="card">
+          <img src="midia/Ícone autoridade.png" alt="Ícone autoridade" />
+          <h3>Autoridade</h3>
+          <p>Posicionamos você como referência para atrair os melhores pacientes ou alunos.</p>
+        </div>
+        <div class="card">
+          <img src="midia/Ícone sistema completo.png" alt="Ícone sistema completo" />
+          <h3>Sistema completo</h3>
+          <p>Tráfego, automações, agendamentos e CRM em uma solução única.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS CLÍNICOS -->
+  <section class="planos" id="planos">
+    <div class="container">
+      <h2>Planos sob medida para cada estágio</h2>
+      <div class="planos-grid">
+        <div class="card">
+          <h3>Plano BASE</h3>
+          <ul>
+            <li>Lançamento estratégico</li>
+            <li>Posicionamento digital</li>
+            <li>Gestão de WhatsApp</li>
+            <li>CRM básico e automações</li>
+          </ul>
+        </div>
+        <div class="card destaque">
+          <h3>Plano FLOW</h3>
+          <ul>
+            <li class="tooltip">
+                CRM completo
+                <span class="tooltiptext">Ferramenta que organiza e automatiza o contato com seus leads e pacientes.</span>
+              </li>            
+            <li>Gestão de tráfego avançada</li>
+            <li>Landing pages e copy</li>
+            <li>Conteúdos e estratégias de autoridade</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Plano CORE360</h3>
+          <ul>
+            <li>Dashboard de métricas</li>
+            <li class="tooltip">
+                Tráfego pago e SEO local
+                <span class="tooltiptext">Otimização para aparecer no Google quando buscam dentistas na sua região.</span>
+              </li>
+            <li>Autoridade e influenciadores</li>
+            <li>Gestão automatizada da jornada do paciente</li>
+          </ul>
+        </div>
+        <div class="card full">
+          <h3>Plano FULLSTACK</h3>
+          <ul>
+            <li>Tráfego completo (Google, Instagram, YouTube)</li>
+            <li>CRM + automações integradas</li>
+            <li>Dashboard personalizado</li>
+            <li>Reuniões táticas com o time da DentComm</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#contato" class="btn-secondary">Agende uma Análise Gratuita</a>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <h2>Depoimentos Reais</h2>
+      <div class="depoimentos-grid">
+        <div class="card">
+          <p>“A DentComm nos ajudou a construir uma autoridade que nos trouxe 400 novos pacientes em 4 meses.”</p>
+          <strong>Dr. Rafael, São Paulo</strong>
+        </div>
+        <div class="card">
+          <p>“Com o plano acadêmico, vendi 90 mentorias em menos de 30 dias com toda estrutura digital pronta.”</p>
+          <strong>Prof. Larissa, Belo Horizonte</strong>
+        </div>
+        <div class="card">
+          <p>“Duplicamos o faturamento da clínica em menos de 5 meses com um funil comercial completo.”</p>
+          <strong>Clínica Sorriso, Curitiba</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="contato-blog">
+  <div class="container-grid">
+    <!-- Lado esquerdo: Blog / E-books -->
+    <div class="blog-preview">
+      <h3>Materiais gratuitos</h3>
+      <p>Acesse nossos e-books exclusivos para dentistas:</p>
+      <div class="ebooks">
+        <div class="ebook">
+          <img src="img/ebook1.jpg" alt="E-book 1">
+          <span>Como atrair mais pacientes</span>
+        </div>
+        <div class="ebook">
+          <img src="img/ebook2.jpg" alt="E-book 2">
+          <span>Marketing para Professores</span>
+        </div>
+        <div class="ebook">
+          <img src="img/ebook3.jpg" alt="E-book 3">
+          <span>Instagram para Dentistas</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lado direito: Formulário -->
+    <div class="formulario-contato">
+      <h2>Vamos conversar?</h2>
+      <p>Preencha o formulário ou fale com a gente no WhatsApp.</p>
+      <form>
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="E-mail" required />
+        <textarea placeholder="Como podemos te ajudar?" required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER PREMIUM -->
+<footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="#sobre">Quem somos</a></li>
+          <li><a href="#beneficios">Serviços</a></li>
+          <li><a href="#">Blog (em breve)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@dent-comm.com">contato@dent-comm.com</a></li>
+          <li><a href="https://wa.me/5514996504330" target="_blank">Fale no WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Siga a DentComm</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/_dentcomm/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61574794785423" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 DentComm. Todos os direitos reservados.</p>
+      <p>Feito com 💙 para dentistas que querem se destacar.</p>
+    </div>
+  </footer>
+  
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a class="whatsapp-float" href="https://wa.me/5514996504330" target="_blank" aria-label="Converse via WhatsApp">
+    <i class="fab fa-whatsapp fa-lg"></i>
+  </a>
+</body>
+</html>
