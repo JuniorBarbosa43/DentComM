@@ -1,237 +1,316 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="htmlRoot">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DentComm - Marketing para Dentistas</title>
+  <title data-translate="page_title">DentComm - Marketing para Dentistas e Clínicas Odontológicas</title>
+  <meta name="description" data-translate="meta_description_index" content="Potencialize sua clínica odontológica com as soluções de marketing digital da DentComm. Atraia mais pacientes, construa autoridade e alcance resultados incríveis.">
   <link rel="icon" href="midia/favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
+  <link rel="canonical" href="https://www.seudominio.com/index.html" /> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script defer src="script.js"></script>
+  <script defer src="js/script.js"></script>
 </head>
 
 <body>
-<!-- NAVBAR PREMIUM RESPONSIVA -->
+<a href="#main-content" class="skip-link visually-hidden" data-translate="skip_to_content">Pular para o conteúdo principal</a>
+
 <header class="navbar">
     <div class="container nav-content">
-      <img src="midia/Icon-logo.png" alt="Logo">
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav>
+      <a href="index.html#inicio" aria-label="Página Inicial DentComm"><img src="midia/Icon-logo.png" alt="Logo DentComm"></a>
+      <nav class="main-nav" aria-label="Navegação Principal">
         <ul class="nav-links" id="navMenu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#beneficios">Benefícios</a></li>
-          <li><a href="#planos">Planos</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <button id="langToggle" class="lang-btn">ES</button>
-          <li><a href="#contato" class="btn-secondary small">Contato</a></li>
-        </ul>        
+          <li><a href="index.html#sobre" data-translate="nav_sobre">Sobre</a></li>
+          <li><a href="index.html#beneficios" data-translate="nav_beneficios">Benefícios</a></li>
+          <li><a href="index.html#planos" data-translate="nav_planos">Nossos Planos</a></li>
+          <li><a href="index.html#depoimentos" data-translate="nav_depoimentos">Depoimentos</a></li>
+          <li><a href="blog.html" class="active" data-translate="nav_blog">Blog</a></li>
+          <li><a href="index.html#contato" class="btn-secondary small nav-contact-btn" data-translate="nav_contato_btn">Contato</a></li>
+        </ul>
       </nav>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-btn" aria-label="Mudar Idioma" data-translate-aria-label="lang_toggle_aria_label">
+          <span class="flag-icon current-lang-flag"></span>
+          <span class="lang-text">PT</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="navMenu">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
-  </header>
+</header>
+<main id="main-content">
+    <section class="hero main-hero-bg" id="inicio" aria-labelledby="main-hero-heading">
+        <div class="hero-overlay"></div> 
+        <div class="container hero-content text-center">
+            <h1 id="main-hero-heading" data-translate="hero_title">Soluções de Marketing Digital para <span>Clínicas Odontológicas e Dentistas</span></h1>
+            <p class="hero-subtitle" data-translate="hero_subtitle">Conectamos sua clínica a mais pacientes através de estratégias personalizadas e hiperespecializadas no setor odontológico.</p>
+            <a href="#contato" class="btn-primary btn-lg hero-cta" data-translate="hero_cta">Solicitar Diagnóstico Gratuito</a>
+        </div>
+    </section>
 
+    <section class="sobre section-padding" id="sobre" aria-labelledby="sobre-titulo">
+        <div class="container">
+            <header class="section-header text-center">
+                <h2 id="sobre-titulo" data-translate="sobre_title">Sobre a DentComm: Sua Parceira Estratégica em Odontologia</h2>
+            </header>
+            <div class="sobre-content">
+                <p data-translate="sobre_p1">
+                    A DentComm nasceu com a missão de <strong data-translate="sobre_p1_strong">potencializar clínicas e dentistas em toda a América Latina</strong>, atraindo os pacientes ideais através de marketing digital inteligente e hiperespecializado no setor odontológico. Não somos apenas uma agência; atuamos como uma <strong data-translate="sobre_p2_strong">extensão estratégica da sua clínica</strong>.
+                </p>
+                <p data-translate="sobre_p2">
+                    Nosso foco é em <strong data-translate="sobre_p3_strong">previsibilidade de resultados, construção de autoridade de marca para sua clínica e ROI mensurável</strong>. Contamos com um time de especialistas em tráfego pago, SEO, conteúdo estratégico, automações e design UX/UI – tudo para transformar sua presença digital em uma poderosa máquina de aquisição e fidelização de pacientes.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<!-- HERO SECTION COM VÍDEO -->
-<section class="hero">
-    <video autoplay muted loop playsinline>
-      <source src="midia/efeitos.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
-    </video>
+<!-- BENEFÍCIOS -->
+  <section class="benefits section-padding bg-light" id="beneficios" aria-labelledby="beneficios-titulo">
     <div class="container">
-      <h1>Marketing para <span>Dentistas e Professores</span> de Odontologia</h1>
-      <p>Especialistas em atrair mais pacientes ou alunos com estratégias de marketing personalizadas.</p>
-      <a href="#contato" class="btn-primary">Solicitar Diagnóstico Gratuito</a>
+        <header class="section-header text-center">
+            <h2 id="beneficios-titulo" data-translate="beneficios_title">Por que Escolher a DentComm para sua Clínica?</h2>
+        </header>
+        <div class="benefit-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fas fa-microscope" aria-hidden="true"></i></div>
+                <h3 data-translate="beneficios_card1_title">Hiperespecialização Odontológica</h3>
+                <p data-translate="beneficios_card1_desc">Entendemos as nuances da jornada do paciente no universo odontológico. Falamos a língua da sua clínica.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                <h3 data-translate="beneficios_card2_title">Previsibilidade e ROI</h3>
+                <p data-translate="beneficios_card2_desc">Estruture sua clínica com um retorno financeiro previsível e foco em resultados tangíveis para seus tratamentos.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                <h3 data-translate="beneficios_card3_title">Construção de Autoridade Clínica</h3>
+                <p data-translate="beneficios_card3_desc">Posicionamos sua clínica como referência para atrair os melhores pacientes e se destacar na sua região.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fas fa-sitemap" aria-hidden="true"></i></div>
+                <h3 data-translate="beneficios_card4_title">Ecossistema Completo para Clínicas</h3>
+                <p data-translate="beneficios_card4_desc">Tráfego, conteúdo, automações, CRM e design em uma solução integrada e personalizada para sua clínica.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fas fa-headset" aria-hidden="true"></i></div> 
+                <h3 data-translate="beneficios_card5_title">Suporte Dedicado e Parceria Real</h3>
+                <p data-translate="beneficios_card5_desc">Vamos além de uma simples prestação de serviço. Oferecemos suporte próximo e atuamos como verdadeiros parceiros no crescimento da sua clínica.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>                                  
+                <h3 data-translate="beneficios_card6_title">Inovação e Tecnologias de Ponta</h3>
+                <p data-translate="beneficios_card6_desc">Estamos sempre atualizados com as últimas tendências, ferramentas e tecnologias de marketing digital para garantir as estratégias mais eficazes para sua clínica.</p>
+            </div>
+        </div>
     </div>
   </section>
+
+    <section class="planos-section section-padding" id="planos" aria-labelledby="planos-main-titulo">
+        <div class="container">
+            <header class="section-header text-center">
+                <h2 id="planos-main-titulo" data-translate="planos_title">Planos Sob Medida para Cada Estágio da Sua Clínica</h2>
+                <p class="section-subtitle" data-translate="planos_subtitle">Seja para clínicas estabelecidas ou consultórios em crescimento, temos a estratégia ideal para atrair mais pacientes.</p>
+            </header>
+            
+            <div class="planos-container">
+                <article class="plano-card plano-ignition">
+                    <div class="plano-content">
+                        <header class="plano-header">
+                            <span class="plano-icon" aria-hidden="true"><i class="fas fa-rocket"></i></span>
+                            <h3 class="plano-nome" data-translate="planos_ignition_title">Plano IGNITION</h3>
+                            <p class="plano-ideal-para" data-translate="planos_ignition_ideal">Ideal para: Clínicas iniciando no digital, buscando base sólida e primeiros pacientes.</p>
+                        </header>
+                        <ul class="plano-lista-features">
+                            <li data-translate="planos_ignition_feat1">Diagnóstico e Lançamento Estratégico Focado em Pacientes</li>
+                            <li data-translate="planos_ignition_feat2">Posicionamento Digital Essencial da Clínica</li>
+                            <li data-translate="planos_ignition_feat3">Gestão Inicial de Tráfego para Pacientes (Google Ads OU Social Ads)</li>
+                            <li data-translate="planos_ignition_feat4">Configuração de CRM Básico e Automações Iniciais</li>
+                        </ul>
+                    </div>
+                    <footer class="plano-footer">
+                        <a href="plano-ignition.html" class="btn-plano" data-translate="planos_saiba_mais">Saiba Mais <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </footer>
+                </article>
+
+                <article class="plano-card plano-momentum destaque">
+                    <div class="plano-tag-destaque" data-translate="planos_tag_popular">Mais Popular</div>
+                    <div class="plano-content">
+                        <header class="plano-header">
+                            <span class="plano-icon" aria-hidden="true"><i class="fas fa-tachometer-alt"></i></span>
+                            <h3 class="plano-nome" data-translate="planos_momentum_title">Plano MOMENTUM</h3>
+                            <p class="plano-ideal-para" data-translate="planos_momentum_ideal">Ideal para: Clínicas que buscam crescimento acelerado de pacientes e otimização de processos.</p>
+                        </header>
+                        <ul class="plano-lista-features">
+                            <li class="tooltip" data-translate="planos_momentum_feat1">
+                                CRM Completo e Automações Avançadas para Pacientes
+                                <span class="tooltiptext" data-translate="planos_momentum_tooltip1" role="tooltip">Ferramenta robusta para organizar e automatizar o contato com leads e pacientes.</span>
+                            </li>            
+                            <li data-translate="planos_momentum_feat2">Gestão de Tráfego Multicanal para Captação</li>
+                            <li data-translate="planos_momentum_feat3">Criação de Landing Pages de Tratamentos e Copy Persuasiva</li>
+                            <li data-translate="planos_momentum_feat4">Estratégias de Conteúdo para Autoridade da Clínica</li>
+                        </ul>
+                    </div>
+                    <footer class="plano-footer">
+                        <a href="plano-momentum.html" class="btn-plano btn-plano-destaque" data-translate="planos_saiba_mais">Saiba Mais <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </footer>
+                </article>
+
+                <article class="plano-card plano-authority">
+                    <div class="plano-content">
+                        <header class="plano-header">
+                            <span class="plano-icon" aria-hidden="true"><i class="fas fa-crown"></i></span>
+                            <h3 class="plano-nome" data-translate="planos_authority_title">Plano AUTHORITY</h3>
+                            <p class="plano-ideal-para" data-translate="planos_authority_ideal">Ideal para: Clínicas que desejam estabelecer liderança, dominar o mercado regional e construir uma marca forte.</p>
+                        </header>
+                        <ul class="plano-lista-features">
+                            <li data-translate="planos_authority_feat1">Dashboard de Métricas de Performance em Tempo Real</li>
+                            <li class="tooltip" data-translate="planos_authority_feat2">
+                                Tráfego Pago Estratégico e SEO Avançado (Local e Nicho Odontológico)
+                                <span class="tooltiptext" data-translate="planos_authority_tooltip2" role="tooltip">Otimização completa para dominar buscas relevantes para sua clínica e tratamentos.</span>
+                            </li>
+                            <li data-translate="planos_authority_feat3">Marketing de Influência e Parcerias Estratégicas</li>
+                            <li data-translate="planos_authority_feat4">Gestão Automatizada da Jornada Completa do Paciente</li>
+                        </ul>
+                    </div>
+                    <footer class="plano-footer">
+                        <a href="plano-authority.html" class="btn-plano" data-translate="planos_saiba_mais">Saiba Mais <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </footer>
+                </article>
+
+                <article class="plano-card plano-apex full-span-card">
+                    <div class="plano-apex-background-decor" aria-hidden="true"></div>
+                    <div class="plano-content">
+                        <header class="plano-header">
+                            <span class="plano-icon" aria-hidden="true"><i class="fas fa-gem"></i></span>
+                            <h3 class="plano-nome" data-translate="planos_apex_title">Plano APEX 360°</h3>
+                            <p class="plano-ideal-para" data-translate="planos_apex_ideal">Ideal para: Clínicas que visam máxima performance, expansão e parceria estratégica contínua para liderança de mercado.</p>
+                        </header>
+                        <ul class="plano-lista-features">
+                            <li data-translate="planos_apex_feat1">Estratégia de Marketing 360° para Clínicas (Pan-LatAm opcional)</li>
+                            <li data-translate="planos_apex_feat2">Tráfego Completo e Otimização Contínua (Google, Meta, YouTube, LinkedIn)</li>
+                            <li data-translate="planos_apex_feat3">CRM Avançado, BI e Automações Sob Medida para Clínicas</li>
+                            <li data-translate="planos_apex_feat4">Consultoria Tática e Reuniões Estratégicas com Time DentComm</li>
+                        </ul>
+                    </div>
+                    <footer class="plano-footer">
+                        <a href="plano-apex.html" class="btn-plano btn-plano-apex" data-translate="planos_saiba_mais">Saiba Mais <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </footer>
+                </article>
+            </div>
+
+            <div class="planos-cta-final text-center">
+                <p data-translate="planos_footer_cta_text">Não tem certeza de qual plano é o ideal para sua clínica? </p>
+                <a href="#contato" class="btn-primary btn-lg" data-translate="planos_footer_cta_btn">Agende uma Análise Gratuita</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimentos section-padding bg-light" id="depoimentos" aria-labelledby="depoimentos-titulo">
+        <div class="container">
+            <header class="section-header text-center">
+                <h2 id="depoimentos-titulo" data-translate="depoimentos_title">Resultados Reais, Clínicas Satisfeitas</h2>
+            </header>
+            <div class="depoimentos-grid">
+                <blockquote class="depoimento-card">
+                    <p class="depoimento-texto" data-translate="depoimentos_card1_text">“A DentComm nos ajudou a construir uma autoridade que nos trouxe 400 novos pacientes em 4 meses.”</p>
+                    <cite class="depoimento-autor" data-translate="depoimentos_card1_author">Dr. Rafael, Clínica Odonto SP</cite>
+                </blockquote>
+                <blockquote class="depoimento-card">
+                    <p class="depoimento-texto" data-translate="depoimentos_card2_text">“Com o plano de crescimento da DentComm, nossa clínica conseguiu atrair um fluxo constante de pacientes para harmonização facial, aumentando em 70% a procura por este procedimento em 60 dias!”</p>
+                    <cite class="depoimento-autor" data-translate="depoimentos_card2_author">Dra. Beatriz, Estética Dental Avançada - RJ</cite>
+                </blockquote>
+                <blockquote class="depoimento-card">
+                    <p class="depoimento-texto" data-translate="depoimentos_card3_text">“Duplicamos o faturamento da clínica em menos de 5 meses com um funil comercial completo e otimizado pela DentComm.”</p>
+                    <cite class="depoimento-autor" data-translate="depoimentos_card3_author">Clínica Sorriso Vital, Curitiba</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato-materiais-section section-padding" id="contato" aria-labelledby="contato-materiais-titulo-principal">
+        <div class="container contato-materiais-grid">
+            <div class="materiais-preview-col" aria-labelledby="materiais-col-titulo">
+                <h3 id="materiais-col-titulo" data-translate="materiais_title">Materiais Gratuitos para Impulsionar Sua Clínica</h3>
+                <p data-translate="materiais_subtitle">Acesse nossos e-books e guias exclusivos para dentistas e clínicas odontológicas:</p>
+                <div class="ebook-list">
+                    <a href="artigo-exemplo-1.html" target="_blank" rel="noopener noreferrer" class="ebook-item">
+                        <img src="midia/ebook_atrair_pacientes.png" data-translate-alt="alt_ebook1" alt="Capa do e-book Como atrair mais pacientes para sua clínica" class="ebook-cover">
+                        <span class="ebook-title" data-translate="ebook1_title">Guia: Como Atrair Mais Pacientes Qualificados para Sua Clínica</span>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="ebook-item">
+                        <img src="midia/ebook_gestao_clinica.png" data-translate-alt="alt_ebook2" alt="Capa do e-book Guia de Gestão e Marketing para Clínicas" class="ebook-cover">
+                        <span class="ebook-title" data-translate="ebook2_title">Guia Essencial de Gestão e Marketing para Clínicas Odontológicas</span>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="ebook-item">
+                        <img src="midia/ebook_instagram_dentistas.png" data-translate-alt="alt_ebook3" alt="Capa do e-book Instagram para Dentistas e Clínicas" class="ebook-cover">
+                        <span class="ebook-title" data-translate="ebook3_title">Dominando o Instagram para Dentistas e Clínicas de Sucesso</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="formulario-contato-col" aria-labelledby="form-col-titulo">
+                <h3 id="form-col-titulo" data-translate="form_title">Vamos Conversar?</h3>
+                <p data-translate="form_subtitle">Preencha o formulário ou fale diretamente conosco no WhatsApp para um diagnóstico da sua clínica.</p>
+                <form id="contactForm" class="contact-form-fields">
+                    <div>
+                        <label for="form-name" class="visually-hidden" data-translate="form_label_nome">Nome Completo</label>
+                        <input type="text" id="form-name" name="name" data-translate-placeholder="form_placeholder_nome" placeholder="Seu Nome Completo" required aria-required="true" />
+                    </div>
+                    <div>
+                        <label for="form-email" class="visually-hidden" data-translate="form_label_email">E-mail</label>
+                        <input type="email" id="form-email" name="email" data-translate-placeholder="form_placeholder_email" placeholder="Seu Melhor E-mail" required aria-required="true" />
+                    </div>
+                    <div>
+                        <label for="form-message" class="visually-hidden" data-translate="form_label_mensagem">Mensagem</label>
+                        <textarea id="form-message" name="message" data-translate-placeholder="form_placeholder_mensagem" placeholder="Como podemos ajudar sua clínica a alcançar mais pacientes?" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit-btn" data-translate="form_btn_enviar">Enviar Mensagem</button>
+                </form>
+                <div id="formSuccessMessage" class="form-feedback-msg" data-translate="form_success_msg" role="status" aria-live="polite">Mensagem enviada com sucesso! Entraremos em contato em breve.</div>
+            </div>
+        </div>
+        <h2 id="contato-materiais-titulo-principal" class="visually-hidden">Contato e Materiais Gratuitos</h2>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-main-content">
+        <div class="footer-column footer-about">
+            <h4 data-translate="footer_sobre_title">Sobre a DentComm</h4>
+            <ul>
+                <li><a href="#sobre" data-translate="footer_sobre_quemsomos">Quem Somos</a></li>
+                <li><a href="#planos" data-translate="footer_sobre_servicos">Nossos Planos</a></li>
+                <li><a href="blog.html" data-translate="footer_sobre_blog">Blog (em breve)</a></li>
+            </ul>
+        </div>
+        <div class="footer-column footer-contact-links">
+            <h4 data-translate="footer_contato_title">Contato</h4>
+            <ul>
+                <li><a href="mailto:contato@dent-comm.com">contato@dent-comm.com</a></li>
+                <li><a href="https://wa.me/5514996504330" target="_blank" rel="noopener noreferrer" data-translate="footer_contato_whatsapp">Fale Conosco no WhatsApp</a></li>
+            </ul>
+        </div>
+        <div class="footer-column footer-social-media">
+            <h4 data-translate="footer_siga_title">Siga a DentComm</h4>
+            <div class="social-media-icons">
+                <a href="https://www.instagram.com/_dentcomm/" target="_blank" rel="noopener noreferrer" aria-label="Instagram DentComm"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61574794785423" target="_blank" rel="noopener noreferrer" aria-label="Facebook DentComm"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn DentComm"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-bar">
+        <p data-translate="footer_copyright">© <span id="currentYear">2024</span> DentComm. Todos os direitos reservados.</p>
+        <p data-translate="footer_madewithlove">Feito com 💙 para dentistas e clínicas que querem se destacar.</p>
+    </div>
+</footer>
   
-  <!-- SOBRE A DENTCOMM -->
-  <section class="sobre" id="sobre">
-    <div class="container">
-      <h2>Sobre a DentComm</h2>
-      <p>
-        A DentComm nasceu para revolucionar o marketing odontológico, conectando dentistas clínicos e acadêmicos aos pacientes ou alunos ideais. Atuamos como uma extensão estratégica do seu negócio, com foco em previsibilidade de resultados e autoridade de marca. Nosso time é formado por especialistas em tráfego, conteúdo, automações e design — tudo para transformar sua presença digital em uma máquina de atração.
-      </p>
-    </div>
-  </section>
-
-  <!-- BENEFÍCIOS -->
-  <section class="benefits" id="beneficios">
-    <div class="container">
-      <h2>Por que a DentComm?</h2>
-      <div class="benefit-grid">
-        <div class="card">
-          <img src="midia/Ícone previsibilidade.png" alt="Ícone previsibilidade" />
-          <h3>Previsibilidade</h3>
-          <p>Organizamos sua clínica com um retorno financeiro previsível.</p>
-        </div>
-        <div class="card">
-          <img src="midia/Ícone autoridade.png" alt="Ícone autoridade" />
-          <h3>Autoridade</h3>
-          <p>Posicionamos você como referência para atrair os melhores pacientes ou alunos.</p>
-        </div>
-        <div class="card">
-          <img src="midia/Ícone sistema completo.png" alt="Ícone sistema completo" />
-          <h3>Sistema completo</h3>
-          <p>Tráfego, automações, agendamentos e CRM em uma solução única.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PLANOS CLÍNICOS -->
-  <section class="planos" id="planos">
-    <div class="container">
-      <h2>Planos sob medida para cada estágio</h2>
-      <div class="planos-grid">
-        <div class="card">
-          <h3>Plano BASE</h3>
-          <ul>
-            <li>Lançamento estratégico</li>
-            <li>Posicionamento digital</li>
-            <li>Gestão de WhatsApp</li>
-            <li>CRM básico e automações</li>
-          </ul>
-        </div>
-        <div class="card destaque">
-          <h3>Plano FLOW</h3>
-          <ul>
-            <li class="tooltip">
-                CRM completo
-                <span class="tooltiptext">Ferramenta que organiza e automatiza o contato com seus leads e pacientes.</span>
-              </li>            
-            <li>Gestão de tráfego avançada</li>
-            <li>Landing pages e copy</li>
-            <li>Conteúdos e estratégias de autoridade</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Plano CORE360</h3>
-          <ul>
-            <li>Dashboard de métricas</li>
-            <li class="tooltip">
-                Tráfego pago e SEO local
-                <span class="tooltiptext">Otimização para aparecer no Google quando buscam dentistas na sua região.</span>
-              </li>
-            <li>Autoridade e influenciadores</li>
-            <li>Gestão automatizada da jornada do paciente</li>
-          </ul>
-        </div>
-        <div class="card full">
-          <h3>Plano FULLSTACK</h3>
-          <ul>
-            <li>Tráfego completo (Google, Instagram, YouTube)</li>
-            <li>CRM + automações integradas</li>
-            <li>Dashboard personalizado</li>
-            <li>Reuniões táticas com o time da DentComm</li>
-          </ul>
-        </div>
-      </div>
-      <a href="#contato" class="btn-secondary">Agende uma Análise Gratuita</a>
-    </div>
-  </section>
-
-  <!-- DEPOIMENTOS -->
-  <section class="depoimentos" id="depoimentos">
-    <div class="container">
-      <h2>Depoimentos Reais</h2>
-      <div class="depoimentos-grid">
-        <div class="card">
-          <p>“A DentComm nos ajudou a construir uma autoridade que nos trouxe 400 novos pacientes em 4 meses.”</p>
-          <strong>Dr. Rafael, São Paulo</strong>
-        </div>
-        <div class="card">
-          <p>“Com o plano acadêmico, vendi 90 mentorias em menos de 30 dias com toda estrutura digital pronta.”</p>
-          <strong>Prof. Larissa, Belo Horizonte</strong>
-        </div>
-        <div class="card">
-          <p>“Duplicamos o faturamento da clínica em menos de 5 meses com um funil comercial completo.”</p>
-          <strong>Clínica Sorriso, Curitiba</strong>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<section class="contato-blog">
-  <div class="container-grid">
-    <!-- Lado esquerdo: Blog / E-books -->
-    <div class="blog-preview">
-      <h3>Materiais gratuitos</h3>
-      <p>Acesse nossos e-books exclusivos para dentistas:</p>
-      <div class="ebooks">
-        <div class="ebook">
-          <img src="img/ebook1.jpg" alt="E-book 1">
-          <span>Como atrair mais pacientes</span>
-        </div>
-        <div class="ebook">
-          <img src="img/ebook2.jpg" alt="E-book 2">
-          <span>Marketing para Professores</span>
-        </div>
-        <div class="ebook">
-          <img src="img/ebook3.jpg" alt="E-book 3">
-          <span>Instagram para Dentistas</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Lado direito: Formulário -->
-    <div class="formulario-contato">
-      <h2>Vamos conversar?</h2>
-      <p>Preencha o formulário ou fale com a gente no WhatsApp.</p>
-      <form>
-        <input type="text" placeholder="Nome" required />
-        <input type="email" placeholder="E-mail" required />
-        <textarea placeholder="Como podemos te ajudar?" required></textarea>
-        <button type="submit">Enviar mensagem</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER PREMIUM -->
-<footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h4>Sobre</h4>
-        <ul>
-          <li><a href="#sobre">Quem somos</a></li>
-          <li><a href="#beneficios">Serviços</a></li>
-          <li><a href="#">Blog (em breve)</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <ul>
-          <li><a href="mailto:contato@dent-comm.com">contato@dent-comm.com</a></li>
-          <li><a href="https://wa.me/5514996504330" target="_blank">Fale no WhatsApp</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Siga a DentComm</h4>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/_dentcomm/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=61574794785423" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 DentComm. Todos os direitos reservados.</p>
-      <p>Feito com 💙 para dentistas que querem se destacar.</p>
-    </div>
-  </footer>
-  
-
-  <!-- WHATSAPP FLOATING BUTTON -->
-  <a class="whatsapp-float" href="https://wa.me/5514996504330" target="_blank" aria-label="Converse via WhatsApp">
-    <i class="fab fa-whatsapp fa-lg"></i>
-  </a>
+<a class="whatsapp-float-btn" href="https://wa.me/5514996504330" target="_blank" rel="noopener noreferrer" aria-label="Converse conosco via WhatsApp">
+    <i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i>
+</a>
 </body>
 </html>

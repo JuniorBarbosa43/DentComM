@@ -1,0 +1,650 @@
+/* ==========================================================================
+   lp-plano.css - Estilos Específicos para Landing Pages de Planos
+   ========================================================================== */
+
+/* 
+  Assume-se que as variáveis globais de cores, fontes, etc.,
+  estão definidas no style.css principal e são herdadas.
+  Se este arquivo for usado de forma totalmente independente, 
+  descomente e ajuste o :root abaixo.
+*/
+/*
+:root {
+    --cor-primaria: #0056b3;
+    --cor-primaria-escura: #004494;
+    --cor-primaria-clara: #a2d2ff;
+    --cor-secundaria: #ffc107;
+    --cor-texto-principal: #212529;
+    --cor-texto-secundario: #495057;
+    --cor-texto-claro: #f8f9fa;
+    --cor-fundo-lp: #ffffff;
+    --cor-fundo-secao-alternativa-lp: #f4f7f9;
+    --cor-fundo-escuro-lp: #111827; 
+    --cor-fundo-escuro-card-lp: rgba(255, 255, 255, 0.05);
+    --cor-borda-sutil-lp: #dfe6ec;
+    --cor-borda-escura-sutil-lp: rgba(255, 255, 255, 0.1);
+
+    --sombra-card-lp: 0 10px 30px rgba(0, 70, 120, 0.07);
+    --sombra-card-hover-lp: 0 15px 45px rgba(0, 70, 120, 0.12);
+    --sombra-card-escura-lp: 0 10px 30px rgba(0,0,0, 0.2);
+    --sombra-card-escura-hover-lp: 0 15px 45px rgba(0,0,0, 0.3);
+
+    --raio-borda-lp: 12px;
+    --raio-borda-maior-lp: 16px;
+}
+*/
+
+/* ==========================================================================
+   Estilos Gerais para Seções da LP
+   ========================================================================== */
+.plano-lp-section {
+    padding: var(--espacamento-secao-vertical) 0;
+}
+
+.plano-lp-section.bg-gradient-light {
+    background: linear-gradient(180deg, var(--cor-fundo-secao-alternativa-lp, var(--cor-fundo-secao-alternativa)) 0%, var(--cor-fundo-lp, var(--cor-fundo-secao)) 100%);
+}
+
+.plano-lp-section.bg-gradient-dark {
+    background: linear-gradient(180deg, var(--cor-fundo-escuro-lp, #1f2937) 0%, #111827 100%);
+    color: var(--cor-texto-claro);
+}
+.plano-lp-section.bg-gradient-dark .section-header h2,
+.plano-lp-section.bg-gradient-dark .section-header .section-subtitle,
+.plano-lp-section.bg-gradient-dark h3,
+.plano-lp-section.bg-gradient-dark p {
+    color: var(--cor-texto-claro);
+}
+.plano-lp-section.bg-gradient-dark .section-header h2 {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.plano-lp-section.bg-gradient-dark .section-header .section-subtitle {
+    opacity: 0.85;
+}
+
+
+.plano-lp-section .section-header {
+    margin-bottom: clamp(2.5rem, 6vw, 4rem); /* Espaçamento responsivo */
+}
+.plano-lp-section .section-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem); /* Títulos de seção maiores */
+    color: var(--cor-primaria-escura); /* Herda de style.css se .section-header-light não for usado */
+}
+.plano-lp-section .section-subtitle {
+    font-size: clamp(1.1rem, 2.8vw, 1.3rem);
+    max-width: 800px; /* Subtítulos podem ser mais largos */
+    line-height: 1.65;
+}
+
+/* ==========================================================================
+   Hero Section das LPs de Planos
+   ========================================================================== */
+.plano-lp-hero {
+    padding: clamp(6rem, 15vh, 10rem) 0 clamp(5rem, 12vh, 8rem); /* Padding responsivo */
+    position: relative;
+    color: var(--cor-texto-hero);
+    background-color: var(--cor-primaria-muito-escura); /* Fallback */
+    overflow: hidden;
+    min-height: 70vh; /* Altura mínima */
+    display: flex;
+    align-items: center;
+}
+
+/* Fundos específicos para cada plano */
+.ignition-hero-bg {
+    background-image: linear-gradient(70deg, rgba(var(--cor-primaria-escura-rgb), 0.88) 0%, rgba(var(--cor-primaria-rgb), 0.75) 100%), url('midia/ignition-hero-bg.jpg'); /* **SUBSTITUA IMAGEM** */
+    background-size: cover;
+    background-position: center 30%; /* Ajustar posição se necessário */
+}
+.momentum-hero-bg {
+    background-image: linear-gradient(60deg, rgba(0, 40, 80, 0.9) 0%, rgba(0, 86, 179, 0.8) 100%), url('midia/momentum-hero-bg.jpg'); /* **SUBSTITUA IMAGEM** */
+    background-size: cover;
+    background-position: center center;
+}
+.authority-hero-bg {
+    background-image: linear-gradient(75deg, rgba(10, 20, 35, 0.92) 0%, rgba(0, 50, 100, 0.82) 100%), url('midia/authority-hero-bg.jpg'); /* **SUBSTITUA IMAGEM** */
+    background-size: cover;
+    background-position: center center;
+}
+.apex-hero-bg {
+    background-image: linear-gradient(70deg, rgba(20, 30, 45, 0.95) 0%, rgba(10, 15, 25, 0.88) 100%), url('midia/apex-hero-bg.jpg'); /* **SUBSTITUA IMAGEM - mais escura/sofisticada** */
+    background-size: cover;
+    background-position: center center;
+}
+
+.plano-lp-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+    /* O overlay principal é feito pelo gradiente no background-image do hero específico.
+       Este pode ser usado para um padrão sutil adicional. */
+    /* background-image: url('midia/subtle-noise-pattern.png'); opacity: 0.05; */
+}
+.plano-lp-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.plano-lp-tag-destaque, .plano-lp-tag-exclusive { /* Estilo comum para tags */
+    color: var(--cor-texto-principal);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin-bottom: 1.8rem; /* Mais espaço */
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.plano-lp-tag-destaque { /* Tag "Mais Popular" (Amarela) */
+    background: var(--cor-secundaria);
+    box-shadow: 0 4px 15px rgba(255,193,7,0.35);
+}
+.plano-lp-tag-exclusive { /* Tag "Exclusivo 360" (Azul) */
+    background: linear-gradient(45deg, var(--cor-primaria-clara), #cce0ff);
+    color: var(--cor-primaria-escura);
+    box-shadow: 0 5px 18px rgba(0, 86, 179, 0.25);
+}
+
+.plano-lp-hero h1 {
+    font-size: clamp(2.6rem, 6vw, 4rem);
+    margin-bottom: 1.5rem;
+    color: var(--cor-texto-hero);
+    text-shadow: 0 3px 15px rgba(0,0,0,0.45);
+    font-weight: 800;
+}
+.plano-lp-hero h1 span {
+    color: var(--cor-primaria-clara);
+    /* Efeito de brilho sutil no span */
+    /* text-shadow: 0 0 15px var(--cor-primaria-clara), 0 0 25px var(--cor-primaria-clara); */
+}
+.plano-lp-hero-subtitle {
+    font-size: clamp(1.1rem, 2.8vw, 1.5rem);
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    opacity: 0.92;
+    line-height: 1.65;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+.plano-lp-hero-cta {
+    padding: 1rem 2.8rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.plano-lp-hero-cta.apex-cta-hero { /* CTA específico do APEX no Hero */
+    background: var(--cor-secundaria);
+    color: var(--cor-texto-principal);
+    border-color: transparent;
+}
+.plano-lp-hero-cta.apex-cta-hero:hover {
+    background: var(--cor-secundaria-escura);
+    box-shadow: 0 8px 20px rgba(255,193,7,0.4);
+}
+
+/* ==========================================================================
+   Seção "Por que o Plano?"
+   ========================================================================== */
+.porque-momentum-section, .porque-ignition-section, .porque-authority-section, .porque-apex-section {
+    background-color: var(--cor-fundo-lp, var(--cor-fundo-secao));
+}
+.porque-momentum-grid { /* Layout comum para esta seção */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+@media (min-width: 992px) { /* Ajustado para 992px para melhor quebra */
+    .porque-momentum-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+    .porque-momentum-grid.imagem-primeiro { /* Para variar o layout */
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+    .porque-momentum-grid.imagem-primeiro .solucao-img-col { order: -1; }
+}
+
+.desafios-col h3 {
+    font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+    margin-bottom: 1.8rem;
+    color: var(--cor-primaria-escura);
+}
+.lista-desafios {
+    list-style: none;
+    padding-left: 0;
+}
+.lista-desafios li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.1rem;
+    font-size: 1.05rem;
+    color: var(--cor-texto-secundario);
+    line-height: 1.6;
+}
+.icon-desafio {
+    color: var(--cor-primaria); /* Cor padrão para ícones de desafio */
+    margin-right: 1rem;
+    font-size: 1.4em; /* Ícone maior */
+    line-height: 1.5;
+    flex-shrink: 0;
+    margin-top: 0.1em; /* Alinhamento vertical fino */
+}
+.page-plano-ignition .icon-desafio { color: #e67e22; } /* Laranja para Ignition (dúvidas) */
+.page-plano-momentum .icon-desafio { color: #c0392b; } /* Vermelho para Momentum (problemas a resolver) */
+.page-plano-authority .icon-desafio { color: var(--cor-primaria-escura); } /* Azul escuro para Authority (metas de liderança) */
+.page-plano-apex .icon-desafio { color: var(--cor-secundaria-escura); } /* Amarelo escuro para Apex (visão estratégica) */
+
+.solucao-img-col {
+    text-align: center;
+}
+.solucao-imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--raio-borda-maior-lp);
+    box-shadow: 0 18px 45px rgba(0, 70, 120, 0.1);
+    object-fit: cover; /* Para garantir que a imagem preencha */
+    max-height: 450px; /* Limitar altura da imagem da solução */
+}
+
+/* ==========================================================================
+   Seção Features dos Planos
+   ========================================================================== */
+.features-momentum-grid { /* Layout comum para features */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+.feature-card-momentum { /* Estilo base do card de feature */
+    background: var(--cor-fundo-lp, var(--cor-fundo-secao));
+    padding: 2.2rem; /* Padding ajustado */
+    border-radius: var(--raio-borda-lp);
+    box-shadow: var(--sombra-card-lp);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-top: 5px solid var(--cor-primaria);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.feature-card-momentum:hover {
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: var(--sombra-card-hover-lp);
+}
+.feature-card-icon {
+    font-size: 2.6rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1.25rem;
+    width: 65px; height: 65px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background-color: var(--cor-primaria-muito-clara);
+    border-radius: var(--raio-borda-circulo);
+}
+.feature-card-momentum h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: var(--cor-primaria-escura);
+}
+.feature-card-momentum p {
+    font-size: 0.95rem;
+    color: var(--cor-texto-secundario);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+}
+.feature-card-momentum p.feature-beneficio {
+    font-size: 0.95rem;
+    color: var(--cor-texto-principal);
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--cor-borda-sutil-lp);
+}
+.feature-card-momentum p.feature-beneficio strong {
+    color: var(--cor-primaria);
+}
+
+/* Estilos para features do APEX em fundo escuro */
+.features-apex-section.bg-gradient-dark .feature-card-apex {
+    background: var(--cor-fundo-escuro-card-lp, rgba(255, 255, 255, 0.05));
+    border: 1px solid var(--cor-borda-escura-sutil-lp, rgba(255, 255, 255, 0.1));
+    border-top-color: var(--cor-primaria-clara);
+    box-shadow: var(--sombra-card-escura-lp, 0 10px 30px rgba(0,0,0, 0.2));
+}
+.features-apex-section.bg-gradient-dark .feature-card-apex:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--sombra-card-escura-hover-lp, 0 15px 45px rgba(0,0,0, 0.3));
+}
+.features-apex-section.bg-gradient-dark .feature-card-apex .feature-card-icon.apex-icon {
+    color: var(--cor-primaria-clara);
+    background-color: rgba(var(--cor-primaria-clara-rgb), 0.1); /* Precisa de --cor-primaria-clara-rgb */
+}
+.features-apex-section.bg-gradient-dark .feature-card-apex h3 {
+    color: var(--cor-texto-claro);
+}
+.features-apex-section.bg-gradient-dark .feature-card-apex p {
+    color: rgba(230, 235, 240, 0.88);
+}
+.features-apex-section.bg-gradient-dark .feature-card-apex p.feature-beneficio {
+    color: var(--cor-texto-claro);
+    border-top-color: var(--cor-borda-escura-sutil-lp, rgba(255, 255, 255, 0.15));
+}
+.features-apex-section.bg-gradient-dark .feature-card-apex p.feature-beneficio strong {
+    color: var(--cor-primaria-clara);
+}
+
+/* ==========================================================================
+   Seção Processo dos Planos
+   ========================================================================== */
+.processo-momentum-steps { /* Layout comum para processo */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .processo-momentum-steps {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+/* ==========================================================================
+   Seção Processo dos Planos (Com Linhas Conectoras)
+   ========================================================================== */
+.processo-momentum-steps { /* Layout comum para processo */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem; /* Aumentar um pouco o gap para a linha */
+    position: relative; /* Essencial para o posicionamento das linhas */
+}
+
+@media (min-width: 768px) {
+    .processo-momentum-steps {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem; /* Aumentar gap no desktop */
+    }
+
+    /* Linhas conectoras para desktop */
+    .processo-step-item {
+        position: relative; /* Para que o ::after seja posicionado em relação a ele */
+        z-index: 1; /* Para garantir que o card fique acima da linha se houver sobreposição */
+    }
+
+    .processo-step-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: calc(32.5px + 0.5rem); /* Metade da altura do .processo-step-number (65px / 2) + padding do .processo-step-number */
+                                   /* ou ajuste para alinhar com o centro do número */
+        left: calc(100% + 0.75rem);  /* Começa logo após o card, considerando metade do gap */
+        width: calc(3rem - 1.5rem); /* Largura da linha = gap - (2 * 0.75rem das laterais) */
+                                     /* Ou um valor fixo: width: 40px; */
+        height: 2px; /* Espessura da linha */
+        background-color: var(--cor-primaria-clara); /* Cor da linha */
+        z-index: 0; /* Para ficar atrás do próximo card se houver sobreposição visual */
+    }
+
+    /* Para o segundo item, a linha também pode ser desenhada para a esquerda
+       ou podemos apenas desenhar da esquerda para a direita.
+       Se for só da esquerda para a direita, a regra acima é suficiente.
+       Se quiser linhas de ambos os lados para o item do meio, precisaria de ::before também.
+       Por simplicidade, vamos manter a linha apenas à direita de cada item (exceto o último).
+    */
+
+   /* Se a sua grid tiver apenas 2 colunas em algum breakpoint antes de 3, ajuste: */
+   /* @media (min-width: 500px) and (max-width: 767px) {
+        .processo-momentum-steps { grid-template-columns: repeat(2, 1fr); }
+        .processo-step-item:nth-child(2n)::after {
+            display: none; // Não desenha linha após o último item da linha de 2 colunas
+        }
+   } */
+}
+
+.processo-step-item {
+    background: var(--cor-fundo-secao-alternativa-lp, var(--cor-fundo-secao-alternativa));
+    padding: 2rem 1.5rem;
+    border-radius: var(--raio-borda-lp);
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    border: 1px solid var(--cor-borda-sutil-lp);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transicao-padrao);
+}
+/* ... (restante dos estilos de .processo-step-item, .processo-step-number, etc., como antes) ... */
+}
+.processo-step-item {
+    background: var(--cor-fundo-secao-alternativa-lp, var(--cor-fundo-secao-alternativa));
+    padding: 2rem 1.5rem;
+    border-radius: var(--raio-borda-lp);
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    border: 1px solid var(--cor-borda-sutil-lp);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transicao-padrao);
+}
+.processo-step-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 86, 179, 0.1);
+}
+.processo-step-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    line-height: 1;
+    margin-bottom: 1.25rem;
+    background-color: var(--cor-primaria-muito-clara);
+    width: 65px; height: 65px;
+    border-radius: var(--raio-borda-circulo);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,86,179,0.1);
+    transition: var(--transicao-padrao);
+}
+.processo-step-item:hover .processo-step-number {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    transform: scale(1.1);
+}
+/* Número do passo específico para APEX */
+.processo-step-number.apex-step-number {
+    background: var(--cor-primaria-escura);
+    color: var(--cor-texto-claro);
+}
+.processo-step-item:hover .processo-step-number.apex-step-number {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-principal);
+}
+
+.processo-step-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    color: var(--cor-texto-principal);
+}
+.processo-step-content p {
+    font-size: 0.925rem;
+    color: var(--cor-texto-secundario);
+    line-height: 1.6;
+}
+.secao-cta {
+    margin-top: 3.5rem;
+}
+.btn-primary.apex-cta-processo { /* CTA processo APEX */
+    background-image: linear-gradient(140deg, var(--cor-secundaria) 0%, var(--cor-secundaria-escura) 100%);
+    color: var(--cor-texto-principal);
+    border-color: var(--cor-secundaria-escura);
+}
+.btn-primary.apex-cta-processo:hover {
+    background-image: linear-gradient(140deg, var(--cor-secundaria-escura) 0%, #d39e00 100%);
+}
+
+/* ==========================================================================
+   Seção FAQ das LPs
+   ========================================================================== */
+.container-sm {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.faq-accordion {
+    border-top: 1px solid var(--cor-borda-sutil-lp);
+}
+.faq-item {
+    background: var(--cor-fundo-lp, var(--cor-fundo-secao));
+    border-bottom: 1px solid var(--cor-borda-sutil-lp);
+}
+.faq-item summary {
+    padding: 1.4rem 1rem; /* Padding ajustado */
+    font-weight: 600;
+    font-size: 1.15rem; /* Fonte um pouco maior */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-texto-principal);
+    transition: background-color 0.2s ease;
+    list-style: none; /* Remover marcador padrão do summary */
+}
+.faq-item summary::-webkit-details-marker { display: none; } /* Remover marcador no Chrome/Safari */
+.faq-item summary:hover {
+    background-color: var(--cor-fundo-secao-alternativa-lp, var(--cor-fundo-secao-alternativa));
+}
+.faq-icon {
+    transition: transform 0.25s ease-in-out;
+    color: var(--cor-primaria);
+    font-size: 1em; /* Tamanho relativo ao summary */
+    margin-left: 1rem; /* Espaço do ícone */
+}
+.faq-item[open] summary .faq-icon {
+    transform: rotate(180deg);
+}
+.faq-content {
+    padding: 0.5rem 1rem 1.5rem 1rem; /* Padding ajustado */
+    /* border-top: 1px dashed var(--cor-borda-sutil-lp); */ /* Opcional se quiser uma linha interna */
+}
+.faq-content p {
+    margin: 0;
+    color: var(--cor-texto-secundario);
+    font-size: 0.98rem; /* Fonte do conteúdo do FAQ */
+    line-height: 1.7;
+}
+
+/* FAQ no fundo escuro para APEX */
+.faq-apex-section.bg-gradient-dark .faq-item {
+    background: var(--cor-fundo-escuro-card-lp, rgba(255, 255, 255, 0.03));
+    border-color: var(--cor-borda-escura-sutil-lp, rgba(255, 255, 255, 0.1));
+}
+.faq-apex-section.bg-gradient-dark .faq-item summary {
+    color: var(--cor-texto-claro);
+}
+.faq-apex-section.bg-gradient-dark .faq-item summary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.faq-apex-section.bg-gradient-dark .faq-icon {
+    color: var(--cor-primaria-clara);
+}
+/* Adicionar/Modificar no lp-plano.css */
+
+/* ... outros estilos ... */
+
+/* FAQ no fundo escuro para APEX */
+.faq-apex-section.bg-gradient-dark .faq-item {
+    background: var(--cor-fundo-escuro-card-lp, rgba(255, 255, 255, 0.03));
+    border-color: var(--cor-borda-escura-sutil-lp, rgba(255, 255, 255, 0.1));
+}
+.faq-apex-section.bg-gradient-dark .faq-item summary {
+    color: var(--cor-texto-claro);
+    padding-bottom: 1.2rem; /* Ajustar padding para a linha */
+}
+.faq-apex-section.bg-gradient-dark .faq-item summary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.faq-apex-section.bg-gradient-dark .faq-icon {
+    color: var(--cor-primaria-clara);
+}
+
+.faq-apex-section.bg-gradient-dark .faq-item[open] summary {
+    padding-bottom: 1rem; 
+}
+
+.faq-apex-section.bg-gradient-dark .faq-content {
+    padding: 1.5rem 1rem 1.5rem 1rem; /* Padding superior para dar espaço à linha */
+    border-top: 1px dashed rgba(255, 255, 255, 0.15); /* Linha sutil */
+    /* margin-top: 0; Se a borda está aqui, padding-top já faz o espaço */
+}
+.faq-apex-section.bg-gradient-dark .faq-content p {
+    color: rgba(230, 235, 240, 0.9);
+}
+.faq-apex-section.bg-gradient-dark .faq-content p {
+    color: rgba(230, 235, 240, 0.9); /* Texto mais claro */
+}
+
+/* ==========================================================================
+   Seção CTA Final das LPs
+   ========================================================================== */
+.cta-final-momentum-section, .cta-final-ignition-section, .cta-final-authority-section, .cta-final-apex-section {
+    background-color: var(--cor-primaria-escura);
+    color: var(--cor-texto-claro);
+    padding: clamp(5rem, 12vw, 7rem) 0;
+}
+.cta-final-momentum-section h2, .cta-final-ignition-section h2, .cta-final-authority-section h2, .cta-final-apex-section h2 {
+    color: var(--cor-texto-claro);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.cta-final-momentum-section .section-subtitle, .cta-final-ignition-section .section-subtitle, .cta-final-authority-section .section-subtitle, .cta-final-apex-section .section-subtitle {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+.cta-final-btn { /* Botão padrão do CTA Final */
+    background: var(--cor-secundaria);
+    color: var(--cor-texto-principal);
+    border-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(255,193,7,0.3);
+}
+.cta-final-btn:hover {
+    background: var(--cor-secundaria-escura);
+    box-shadow: 0 8px 25px rgba(255,193,7,0.4);
+}
+/* CTA Final do APEX (já definido em seção anterior, pode ser removido se usar o padrão acima) */
+.cta-final-apex-section {
+    background-color: var(--cor-fundo-escuro-lp, #111827);
+}
+.cta-final-apex-section .cta-final-btn.apex-cta-final {
+    background: linear-gradient(45deg, var(--cor-secundaria) 0%, #ffdd70 100%);
+}
+.cta-final-apex-section .cta-final-btn.apex-cta-final:hover {
+    background: linear-gradient(45deg, #ffdd70 0%, var(--cor-secundaria) 100%);
+}
+
+.voltar-planos-link {
+    margin-top: 2.5rem; /* Mais espaço */
+    display: block;
+}
+.voltar-planos-link .link-discreto {
+    color: var(--cor-primaria-clara);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: var(--transicao-rapida);
+}
+.voltar-planos-link .link-discreto:hover {
+    color: var(--cor-texto-claro);
+    text-decoration: underline;
+    opacity: 0.9;
+}
+.voltar-planos-link .link-discreto i {
+    margin-right: 0.5rem; /* Mais espaço para o ícone */
+    transition: transform 0.2s ease-out;
+}
+.voltar-planos-link .link-discreto:hover i {
+    transform: translateX(-3px);
+}
+
+/* Utilitários de Display */
+.desktop-only { display: none; }
+@media (min-width: 768px) { .desktop-only { display: inline; } }
