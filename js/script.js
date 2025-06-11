@@ -149,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "sidebar_cta_btn": "Ver Nossos Planos",
         "sidebar_title_accessible": "Barra Lateral do Blog",
         "footer_sobre_blog_link": "Blog",
+        "ver_outros_planos": "Ver todos os planos",
         "artigo1_seo_title": "Como Atrair Mais Pacientes para sua Clínica Odontológica em 2025 | Blog DentComm",
         "artigo1_seo_desc": "Aprenda estratégias eficazes de marketing digital, SEO local e redes sociais para aumentar o fluxo de pacientes na sua clínica odontológica neste ano.",
         "artigo_author_by": "Por",
@@ -180,7 +181,149 @@ document.addEventListener("DOMContentLoaded", function () {
         "tag_seo_local": "SEO Local",
         "tag_atrair_pacientes": "Atrair Pacientes",
         "blog_share_text": "Compartilhe:",
-        "blog_related_title": "Você Também Pode Gostar"
+        "blog_related_title": "Você Também Pode Gostar",
+        
+        "base_page_title": "Plano Base - Estrutura Digital Essencial | DentComm",
+        "base_meta_description": "O Plano Base da DentComm oferece a estrutura mínima para dentistas atraírem pacientes, construírem autoridade digital e entenderem o retorno de suas ações.",
+        "base_hero_title": "Plano Base: <span>A Estrutura Essencial</span> para Atrair Seus Primeiros Pacientes",
+        "base_hero_subtitle": "Entregamos a estrutura mínima para qualquer dentista construir autoridade digital e entender, na prática, o retorno de suas ações.",
+        "base_hero_cta": "Quero o Plano Base",
+        "base_porque_title": "Começando no Digital ou Precisando de Foco? <br class=\"desktop-only\">O Plano Base é o Ponto de Partida Certo.",
+        "base_porque_subtitle": "Ideal para dentistas que desejam captar pacientes de forma ativa, mas precisam de uma solução de baixo risco, com clareza e sem complexidade.",
+        "base_desafio_title": "As Dores que o Plano Base Resolve:",
+        "base_desafio_1": "Publicar conteúdo sem ver retorno em agendamentos.",
+        "base_desafio_2": "Perder pacientes por desorganização no atendimento via WhatsApp.",
+        "base_desafio_3": "Investir em marketing sem saber se o dinheiro está voltando.",
+        "base_desafio_4": "Não ter clareza de como transformar seguidores em uma agenda cheia.",
+        "base_features_main_title": "O Que Você Recebe no Plano Base?",
+        "base_feat1_title": "Estrutura de Captação e Atendimento",
+        "base_feat1_desc": "Criamos uma Landing Page focada na sua especialidade e implantamos um funil de vendas com etapas personalizadas para o setor odontológico, com formulário integrado ao CRM.",
+        "base_feat2_title": "Identidade Digital e Presença Online",
+        "base_feat2_desc": "Desenvolvemos seu logotipo e paleta visual, entregamos textos prontos para bio do Instagram e WhatsApp, e fornecemos um kit com 4 artes por semana para manter seu feed profissional.",
+        "base_feat3_title": "Tráfego e Captação de Pacientes",
+        "base_feat3_desc": "Gerenciamos 2 campanhas ativas por mês no Meta Ads (Instagram/Facebook) com foco em captação local para o WhatsApp e posicionamento de autoridade.",
+        "base_feat4_title": "Suporte e Estratégia",
+        "base_feat4_desc": "Você recebe um treinamento gravado sobre como converter conversas em agendamentos, templates de mensagens e participa de uma reunião quinzenal de estratégia com nossos especialistas.",
+        "base_feat5_title": "Análise de Resultados e ROI",
+        "base_feat5_desc": "Apresentamos um relatório claro com o número de leads, custo por lead e o cálculo de ROI realista, mostrando o faturamento gerado a partir do investimento em marketing.",
+        "base_faq_title": "Perguntas Frequentes sobre o Plano Base",
+        "base_faq1_q": "O Plano Base é indicado para qual tipo de dentista?",
+        "base_faq1_a": "É perfeito para dentistas de qualquer especialidade que estão começando sua presença digital, reestruturando sua captação de pacientes ou que desejam ter resultados claros com um investimento inicial controlado e de baixo risco.",
+        "base_faq2_q": "A verba de anúncios para o Meta Ads está inclusa na mensalidade?",
+        "base_faq2_a": "Não. A mensalidade do plano cobre toda a estratégia, criação, gestão e suporte da DentComm. A verba para os anúncios é um valor à parte, pago diretamente para a plataforma (Meta). Sugerimos uma verba mínima para garantir que as campanhas tenham um bom desempenho.",
+        "base_faq3_q": "Eu preciso ter conhecimento em marketing para contratar o plano?",
+        "base_faq3_a": "De forma alguma. O objetivo do Plano Base é justamente oferecer a estrutura e o conhecimento para que você não precise se preocupar com isso. Nós cuidamos de toda a parte técnica e estratégica, e orientamos você nas tomadas de decisão.",
+        "base_final_cta_title": "Dê o Primeiro Passo para uma Agenda Cheia e Previsível.",
+        "base_final_cta_subtitle": "O Plano Base é a parceria ideal para iniciar sua jornada de crescimento com o pé direito. Vamos conversar sobre seus objetivos?",
+        "base_final_cta_btn": "Falar com um Especialista",
+
+        "flow_page_title": "Plano Flow - Automação e Escala para sua Clínica | DentComm",
+        "flow_meta_description": "Eleve o nível de captação, conversão e gestão da jornada do paciente com o Plano Flow da DentComm. Ideal para quem precisa crescer com controle e inteligência.",
+        "flow_hero_title": "Plano Flow: <span>Escale sua Captação</span> com Automação e Inteligência",
+        "flow_hero_subtitle": "Ideal para dentistas que já estão no digital, mas precisam crescer com controle, previsibilidade e uma gestão otimizada da jornada do paciente.",
+        "flow_hero_cta": "Quero Escalar com o Flow",
+        "flow_porque_title": "Sua Captação de Pacientes Está Inconstante? <br class=\"desktop-only\">O Flow Traz Previsibilidade e Crescimento.",
+        "flow_porque_subtitle": "Se você sente que está perdendo oportunidades por falta de tempo ou automação e precisa de um método para aumentar o volume de agendamentos, o Plano Flow é a evolução que sua clínica precisa.",
+        "flow_desafio_title": "Os Desafios que Superamos com o Flow:",
+        "flow_desafio_1": "Captação inconsistente: um mês a agenda está cheia, no outro, vazia.",
+        "flow_desafio_2": "Baixa conversão: muitos pacientes chegam, mas poucos agendam.",
+        "flow_desafio_3": "Atendimento confuso, repetitivo e sem um padrão de qualidade.",
+        "flow_desafio_4": "Produção de conteúdo vista como uma obrigação cansativa e ineficaz.",
+        "flow_features_main_title": "As Ferramentas do Flow para seu Crescimento:",
+        "flow_feat1_title": "Rebranding Completo",
+        "flow_feat1_desc": "Realizamos o redesenho total da sua identidade visual, com nova logo, paleta de cores e tipografia. Entregamos um manual de marca profissional para garantir consistência em todos os canais.",
+        "flow_feat2_title": "Campanhas de Tráfego Otimizadas",
+        "flow_feat2_desc": "Gerenciamos 5 campanhas simultâneas no Meta Ads e 2 no Google Ads (Pesquisa e YouTube), com segmentações avançadas por localização, comportamento e engajamento.",
+        "flow_feat3_title": "CRM e Atendimento Automatizado",
+        "flow_feat3_desc": "Implementamos um CRM com funil de conversão ajustado por canal e automações de WhatsApp, como mensagem de entrada, pré-triagem e lembretes automáticos após 48h sem resposta.",
+        "flow_feat4_title": "Nutrição e Reativação de Leads",
+        "flow_feat4_desc": "Executamos 3 campanhas de e-mail marketing mensais e reengajamos até 1.000 leads antigos da sua base com disparos segmentados e rastreáveis para não perder nenhuma oportunidade.",
+        "flow_feat5_title": "Inteligência Artificial Ativada",
+        "flow_feat5_desc": "Utilizamos as funcionalidades de IA do RD Station Marketing para sugerir assuntos de e-mails, segmentar leads por comportamento e otimizar os horários de disparo com base em dados de abertura.",
+        "flow_feat6_title": "Estratégia Comercial e Suporte",
+        "flow_feat6_desc": "Fornecemos scripts personalizados por canal, treinamento para sua equipe interna focado em conversão e reengajamento, e suporte técnico para ajustes operacionais no CRM e automações.",
+        "flow_faq_title": "Perguntas Frequentes sobre o Plano Flow",
+        "flow_faq1_q": "Já tenho uma logo. Preciso fazer o rebranding?",
+        "flow_faq1_a": "O rebranding é uma etapa estratégica do Flow para garantir que sua imagem esteja alinhada a um novo patamar de profissionalismo e autoridade. Analisamos sua identidade atual e, em conjunto, decidimos se um redesenho completo ou apenas ajustes pontuais são necessários para atingir os objetivos.",
+        "flow_faq2_q": "O que significa 'pré-triagem' no WhatsApp?",
+        "flow_faq2_a": "É uma automação que faz as perguntas iniciais essenciais ao paciente (ex: 'Qual tratamento você busca?', 'Você é um novo paciente?'), organizando as informações antes mesmo de sua equipe iniciar o atendimento. Isso economiza tempo e qualifica o lead, permitindo que sua equipe foque na conversão.",
+        "flow_faq3_q": "Como funciona o treinamento da equipe?",
+        "flow_faq3_a": "Oferecemos sessões de treinamento online (gravadas e/ou ao vivo) para sua equipe de atendimento, focadas em técnicas de conversão, uso correto dos scripts, gestão do funil no CRM e melhores práticas para reengajar pacientes. O objetivo é padronizar e otimizar o atendimento para aumentar a taxa de agendamento.",
+        "flow_final_cta_title": "Transforme Leads em Pacientes e Inconsistência em Previsibilidade.",
+        "flow_final_cta_subtitle": "O Plano Flow é a parceria estratégica que sua clínica precisa para crescer de forma organizada e inteligente. Vamos destravar seu potencial?",
+        "flow_final_cta_btn": "Agendar Análise Estratégica",
+        
+        "core360_page_title": "Plano Core360 - O Ecossistema Completo para sua Clínica | DentComm",
+        "core360_meta_description": "Integre marketing, atendimento, vendas e gestão com o Plano Core360. A solução para clínicas que buscam previsibilidade de agenda e crescimento sustentável.",
+        "core360_hero_title": "Plano Core360: <span>O Ecossistema Completo</span> para Dominar seu Mercado",
+        "core360_hero_subtitle": "Integre marketing, atendimento, vendas e gestão. A solução definitiva para clínicas que buscam previsibilidade de agenda e crescimento sustentável.",
+        "core360_hero_cta": "Dominar com o Core360",
+        "core360_porque_title": "Seu Crescimento Está Desorganizado e Difícil de Escalar? <br class=\"desktop-only\">O Core360 Traz Controle e Previsibilidade.",
+        "core360_porque_subtitle": "Para clínicas com múltiplas especialidades e equipe estruturada que precisam de um sistema integrado para gerenciar a jornada do paciente de ponta a ponta e tomar decisões baseadas em dados.",
+        "core360_desafio_title": "Os Desafios de Clínicas em Expansão:",
+        "core360_desafio_1": "Crescimento desorganizado e difícil de escalar de forma sustentável.",
+        "core360_desafio_2": "Equipe sem um padrão de atendimento, resultando em baixa conversão.",
+        "core360_desafio_3": "Falta de rastreamento de resultados por campanha e canal de marketing.",
+        "core360_desafio_4": "ROI baixo ou desconhecido pela ausência de uma visão integrada.",
+        "core360_features_main_title": "As Entregas do Ecossistema Core360:",
+        "core360_feat1_title": "Integração Total do Ecossistema",
+        "core360_feat1_desc": "Conectamos site, páginas por especialidade, central de agendamento, CRM, WhatsApp, e-mail e chatbots em um sistema único e coeso para uma gestão impecável.",
+        "core360_feat2_title": "Tráfego Multicanal Flexível",
+        "core360_feat2_desc": "Criamos campanhas ilimitadas no Meta Ads e Google Ads, distribuídas por objetivos (captação, autoridade, conversão) e com segmentações profundas por especialidade e comportamento.",
+        "core360_feat3_title": "Landing Pages Personalizadas",
+        "core360_feat3_desc": "Desenvolvemos landing pages ilimitadas e específicas para cada campanha ou ação, com layout otimizado para conversão, botão de WhatsApp, formulários e call tracking.",
+        "core360_feat4_title": "CRM e Automação Comportamental",
+        "core360_feat4_desc": "Implementamos funis por canal e especialidade, com automações baseadas no comportamento do lead (clicou, agendou, ignorou) e alertas internos para sua equipe.",
+        "core360_feat5_title": "Nutrição e Relacionamento 360°",
+        "core360_feat5_desc": "Executamos campanhas ilimitadas de e-mail e WhatsApp com IA, nutrindo leads por interesse (estética, dor, prevenção) e recuperando contatos inativos com mais de 90 dias.",
+        "core360_feat6_title": "Inteligência Artificial e Dashboards",
+        "core360_feat6_desc": "Utilizamos IA para pontuação automática de leads e otimização de campanhas. Você terá acesso a um dashboard executivo com dados em tempo real e ROI por especialidade.",
+        "core360_faq_title": "Perguntas Frequentes sobre o Core360",
+        "core360_faq1_q": "Minha clínica precisa ter quantas especialidades para o Core360?",
+        "core360_faq1_a": "O plano é indicado para clínicas que possuem pelo menos duas especialidades ativas. Isso nos permite criar funis, campanhas e nutrições segmentadas, extraindo o máximo potencial da plataforma e garantindo um ROI mais claro por área.",
+        "core360_faq2_q": "O que é 'automação comportamental'?",
+        "core360_faq2_a": "Significa que o sistema reage automaticamente às ações do seu lead. Por exemplo: se um lead clica em um e-mail sobre 'implantes', ele pode ser automaticamente movido para um funil específico desse tratamento e receber mais informações sobre o tema, aumentando a chance de conversão.",
+        "core360_faq3_q": "Como funciona o Dashboard Executivo?",
+        "core360_faq3_a": "É um painel online, acessível por você e sua equipe, que centraliza as métricas mais importantes em tempo real: leads por campanha, custo por conversão, taxa de agendamento e o ROI por especialidade. Ele transforma dados complexos em insights visuais para uma tomada de decisão rápida e estratégica.",
+        "core360_final_cta_title": "Deixe de Adivinhar e Comece a Dominar seu Mercado com Dados.",
+        "core360_final_cta_subtitle": "O Plano Core360 é a parceria que sua clínica precisa para escalar de forma inteligente e sustentável. Pronto para ter uma visão 360° do seu crescimento?",
+        "core360_final_cta_btn": "Solicitar Demonstração do Core360",
+        
+        "fullstack_page_title": "Plano Fullstack - A Operação Digital da sua Clínica, por Completo | DentComm",
+        "fullstack_meta_description": "Com o Plano Fullstack, a DentComm assume toda a operação digital da sua clínica. Ideal para quem busca delegação total com confiança e máxima performance.",
+        "fullstack_hero_title": "Plano Fullstack: <span>Foque no seu Paciente,</span> a Operação Digital é Nossa",
+        "fullstack_hero_subtitle": "Assumimos completamente a operação digital da sua clínica, da estratégia à execução. Cresça com escala, qualidade, previsibilidade e tempo livre.",
+        "fullstack_hero_cta": "Quero a Gestão Fullstack",
+        "fullstack_porque_title": "Sem Tempo para Cuidar do Marketing e das Vendas? <br class=\"desktop-only\">Com o Fullstack, Você Delega com Confiança.",
+        "fullstack_porque_subtitle": "Para clínicas com múltiplos dentistas e grupos odontológicos que precisam de uma parceira que assuma a responsabilidade pela geração de resultados, padronização e crescimento em escala.",
+        "fullstack_desafio_title": "As Dores de Quem Precisa Delegar:",
+        "fullstack_desafio_1": "Falta de tempo para cuidar da área comercial e do marketing da clínica.",
+        "fullstack_desafio_2": "Inconsistência na agenda entre os diferentes profissionais e especialidades.",
+        "fullstack_desafio_3": "Atendimento desorganizado e com uma taxa de conversão abaixo do potencial.",
+        "fullstack_desafio_4": "Crescimento sem dados, sem controle e sem clareza de qual o retorno real sobre o investimento.",
+        "fullstack_features_main_title": "Fullstack: Sua Operação de Marketing e Vendas, Gerenciada por Nós.",
+        "fullstack_feat1_title": "Operação 100% Gerenciada",
+        "fullstack_feat1_desc": "A DentComm assume toda a rotina de marketing e pré-vendas, com um consultor exclusivo dedicado ao seu projeto, interagindo diretamente com sua recepção para garantir a máxima performance.",
+        "fullstack_feat2_title": "Conteúdo e Imagem Premium",
+        "fullstack_feat2_desc": "Produzimos 8 artes por semana, além de vídeos, animações e kits gráficos sob demanda para campanhas sazonais e promoções, com redesign contínuo da sua identidade visual.",
+        "fullstack_feat3_title": "CRM + Pré-venda Gerenciada",
+        "fullstack_feat3_desc": "Nossa equipe assume a gestão dos leads no CRM, realizando a triagem, qualificação e o agendamento ativo via WhatsApp ou e-mail, enviando apenas os pacientes prontos para sua clínica.",
+        "fullstack_feat4_title": "Suporte Total à Clínica",
+        "fullstack_feat4_desc": "Oferecemos consultoria de posicionamento comercial, auxiliamos na estrutura de atendimento e participamos de reuniões internas da sua clínica, se necessário, para alinhar a operação.",
+        "fullstack_feat5_title": "Inteligência Estratégica",
+        "fullstack_feat5_desc": "Aplicamos IA em toda a jornada do lead para previsão de conversão, sugestão de campanhas e pontuação de leads. Você terá acesso total aos relatórios e sugestões preditivas.",
+        "fullstack_feat6_title": "Relatórios e Painéis Avançados",
+        "fullstack_feat6_desc": "Fornecemos relatórios semanais completos da operação e um dashboard interativo com dados em tempo real sobre CPL, CAC, taxa de conversão e faturamento atribuído por campanha.",
+        "fullstack_faq_title": "Perguntas Frequentes sobre o Plano Fullstack",
+        "fullstack_faq1_q": "O que significa 'pré-venda gerenciada' na prática?",
+        "fullstack_faq1_a": "Significa que nossa equipe de especialistas assume o primeiro contato com todos os leads gerados. Nós qualificamos, nutrimos e realizamos o agendamento diretamente no seu sistema. Sua recepção recebe apenas a confirmação do paciente agendado, eliminando o trabalho de atendimento inicial e maximizando a taxa de conversão.",
+        "fullstack_faq2_q": "Este plano é indicado para um dentista autônomo?",
+        "fullstack_faq2_a": "O Plano Fullstack é desenhado para estruturas mais robustas, como clínicas com múltiplos dentistas, especialidades diversas ou grupos odontológicos. Dentistas autônomos com alto volume e que desejam delegação total também podem se beneficiar, mas geralmente os planos Base, Flow ou Core360 são mais indicados para iniciar.",
+        "fullstack_faq3_q": "Como é a comunicação entre a DentComm e minha equipe?",
+        "fullstack_faq3_a": "A comunicação é constante e fluida. Designamos um consultor exclusivo para seu projeto que manterá contato diário com sua recepção ou gestor através de canais como WhatsApp ou Slack. Além disso, realizamos reuniões de alinhamento e performance ilimitadas, conforme a necessidade da operação.",
+        "fullstack_final_cta_title": "Sua única preocupação será oferecer o melhor atendimento. O resto, pode deixar com a gente.",
+        "fullstack_final_cta_subtitle": "O Plano Fullstack é a parceria definitiva para clínicas que buscam crescimento em escala com tranquilidade e confiança. Vamos conversar?",
+        "fullstack_final_cta_btn": "Solicitar Consultoria Fullstack"
     },
     es: {
         // --- GERAL & INDEX.HTML (ESPANHOL) ---
@@ -320,6 +463,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "sidebar_cta_btn": "Ver Nuestros Planes",
         "sidebar_title_accessible": "Barra Lateral del Blog",
         "footer_sobre_blog_link": "Blog",
+        "ver_outros_planos": "Ver todos los planes",
         "artigo1_seo_title": "Cómo Atraer Más Pacientes a tu Clínica Dental en 2025 | Blog DentComm",
         "artigo1_seo_desc": "Aprende estrategias eficaces de marketing digital, SEO local y redes sociales para aumentar el flujo de pacientes en tu clínica dental este año.",
         "artigo_author_by": "Por",
@@ -351,7 +495,149 @@ document.addEventListener("DOMContentLoaded", function () {
         "tag_seo_local": "SEO Local",
         "tag_atrair_pacientes": "Atraer Pacientes",
         "blog_share_text": "Comparte:",
-        "blog_related_title": "También Te Puede Gustar"
+        "blog_related_title": "También Te Puede Gustar",
+        
+        "base_page_title": "Plan Base - Estructura Digital Esencial | DentComm",
+        "base_meta_description": "El Plan Base de DentComm ofrece la estructura mínima para que los dentistas atraigan pacientes, construyan autoridad digital y entiendan el retorno de sus acciones.",
+        "base_hero_title": "Plan Base: <span>La Estructura Esencial</span> para Atraer a Tus Primeros Pacientes",
+        "base_hero_subtitle": "Entregamos la estructura mínima para que cualquier dentista construya autoridad digital y entienda, en la práctica, el retorno de sus acciones.",
+        "base_hero_cta": "Quiero el Plan Base",
+        "base_porque_title": "¿Comenzando en el Mundo Digital o Necesitando Enfoque? <br class=\"desktop-only\">El Plan Base es el Punto de Partida Correcto.",
+        "base_porque_subtitle": "Ideal para dentistas que desean captar pacientes de forma activa, pero necesitan una solución de bajo riesgo, con claridad y sin complejidad.",
+        "base_desafio_title": "Los Dolores que el Plan Base Resuelve:",
+        "base_desafio_1": "Publicar contenido sin ver retorno en citas.",
+        "base_desafio_2": "Perder pacientes por desorganización en la atención por WhatsApp.",
+        "base_desafio_3": "Invertir en marketing sin saber si el dinero está regresando.",
+        "base_desafio_4": "No tener claridad sobre cómo transformar seguidores en una agenda llena.",
+        "base_features_main_title": "¿Qué Recibes en el Plan Base?",
+        "base_feat1_title": "Estructura de Captación y Atención",
+        "base_feat1_desc": "Creamos una Landing Page enfocada en tu especialidad e implementamos un embudo de ventas con etapas personalizadas para el sector dental, con formulario integrado al CRM.",
+        "base_feat2_title": "Identidad Digital y Presencia Online",
+        "base_feat2_desc": "Desarrollamos tu logotipo y paleta visual, entregamos textos listos para la biografía de Instagram y WhatsApp, y proporcionamos un kit con 4 artes por semana para mantener tu feed profesional.",
+        "base_feat3_title": "Tráfico y Captación de Pacientes",
+        "base_feat3_desc": "Gestionamos 2 campañas activas al mes en Meta Ads (Instagram/Facebook) con enfoque en captación local para WhatsApp y posicionamiento de autoridad.",
+        "base_feat4_title": "Soporte y Estrategia",
+        "base_feat4_desc": "Recibes una capacitación grabada sobre cómo convertir conversaciones en citas, plantillas de mensajes y participas en una reunión quincenal de estrategia con nuestros especialistas.",
+        "base_feat5_title": "Análisis de Resultados y ROI",
+        "base_feat5_desc": "Presentamos un informe claro con el número de leads, costo por lead y el cálculo de ROI realista, mostrando la facturación generada a partir de la inversión en marketing.",
+        "base_faq_title": "Preguntas Frecuentes sobre el Plan Base",
+        "base_faq1_q": "¿Para qué tipo de dentista está indicado el Plan Base?",
+        "base_faq1_a": "Es perfecto para dentistas de cualquier especialidad que están comenzando su presencia digital, reestructurando su captación de pacientes o que desean tener resultados claros con una inversión inicial controlada y de bajo riesgo.",
+        "base_faq2_q": "¿El presupuesto para anuncios de Meta Ads está incluido en la mensualidad?",
+        "base_faq2_a": "No. La mensualidad del plan cubre toda la estrategia, creación, gestión y soporte de DentComm. El presupuesto para los anuncios es un valor aparte, pagado directamente a la plataforma (Meta). Sugerimos un presupuesto mínimo para garantizar que las campañas tengan un buen rendimiento.",
+        "base_faq3_q": "¿Necesito tener conocimientos de marketing para contratar el plan?",
+        "base_faq3_a": "De ninguna manera. El objetivo del Plan Base es precisamente ofrecer la estructura y el conocimiento para que no tengas que preocuparte por eso. Nos encargamos de toda la parte técnica y estratégica, y te orientamos en la toma de decisiones.",
+        "base_final_cta_title": "Da el Primer Paso Hacia una Agenda Llena y Predecible.",
+        "base_final_cta_subtitle": "El Plan Base es la alianza ideal para iniciar tu camino de crecimiento con el pie derecho. ¿Hablamos de tus objetivos?",
+        "base_final_cta_btn": "Hablar con un Especialista",
+
+        "flow_page_title": "Plan Flow - Automatización y Escala para tu Clínica | DentComm",
+        "flow_meta_description": "Eleva el nivel de captación, conversión y gestión del recorrido del paciente con el Plan Flow de DentComm. Ideal para quienes necesitan crecer con control e inteligencia.",
+        "flow_hero_title": "Plan Flow: <span>Escala tu Captación</span> con Automatización e Inteligencia",
+        "flow_hero_subtitle": "Ideal para dentistas que ya están en el mundo digital, pero necesitan crecer con control, previsibilidad y una gestión optimizada del recorrido del paciente.",
+        "flow_hero_cta": "Quiero Escalar con el Flow",
+        "flow_porque_title": "¿Tu Captación de Pacientes es Inconstante? <br class=\"desktop-only\">El Flow Aporta Previsibilidad y Crecimiento.",
+        "flow_porque_subtitle": "Si sientes que estás perdiendo oportunidades por falta de tiempo o automatización y necesitas un método para aumentar el volumen de citas, el Plan Flow es la evolución que tu clínica necesita.",
+        "flow_desafio_title": "Los Desafíos que Superamos con el Flow:",
+        "flow_desafio_1": "Captación inconsistente: un mes la agenda está llena, al otro, vacía.",
+        "flow_desafio_2": "Baja conversión: muchos pacientes llegan, pero pocos programan una cita.",
+        "flow_desafio_3": "Atención confusa, repetitiva y sin un estándar de calidad.",
+        "flow_desafio_4": "La producción de contenido se ve como una obligación tediosa e ineficaz.",
+        "flow_features_main_title": "Las Herramientas del Flow para tu Crecimiento:",
+        "flow_feat1_title": "Rebranding Completo",
+        "flow_feat1_desc": "Realizamos el rediseño total de tu identidad visual, con un nuevo logotipo, paleta de colores y tipografía. Entregamos un manual de marca profesional para garantizar la coherencia en todos los canales.",
+        "flow_feat2_title": "Campañas de Tráfico Optimizadas",
+        "flow_feat2_desc": "Gestionamos 5 campañas simultáneas en Meta Ads y 2 en Google Ads (Búsqueda y YouTube), con segmentaciones avanzadas por ubicación, comportamiento y engagement.",
+        "flow_feat3_title": "CRM y Atención Automatizada",
+        "flow_feat3_desc": "Implementamos un CRM con un embudo de conversión ajustado por canal y automatizaciones de WhatsApp, como mensajes de bienvenida, precalificación y recordatorios automáticos después de 48h sin respuesta.",
+        "flow_feat4_title": "Nutrición y Reactivación de Leads",
+        "flow_feat4_desc": "Ejecutamos 3 campañas de email marketing mensuales y reenganchamos hasta 1,000 leads antiguos de tu base con envíos segmentados y rastreables para no perder ninguna oportunidad.",
+        "flow_feat5_title": "Inteligencia Artificial Activada",
+        "flow_feat5_desc": "Utilizamos las funcionalidades de IA de RD Station Marketing para sugerir asuntos de correos electrónicos, segmentar leads por comportamiento y optimizar los horarios de envío basados en datos de apertura.",
+        "flow_feat6_title": "Estrategia Comercial y Soporte",
+        "flow_feat6_desc": "Proporcionamos guiones personalizados por canal, capacitación para tu equipo interno enfocada en conversión y reenganche, y soporte técnico para ajustes operativos en el CRM y automatizaciones.",
+        "flow_faq_title": "Preguntas Frecuentes sobre el Plan Flow",
+        "flow_faq1_q": "Ya tengo un logotipo. ¿Necesito hacer el rebranding?",
+        "flow_faq1_a": "El rebranding es un paso estratégico del Flow para asegurar que tu imagen esté alineada con un nuevo nivel de profesionalismo y autoridad. Analizamos tu identidad actual y, juntos, decidimos si es necesario un rediseño completo o solo ajustes puntuales para alcanzar los objetivos.",
+        "flow_faq2_q": "¿Qué significa 'precalificación' en WhatsApp?",
+        "flow_faq2_a": "Es una automatización que realiza las preguntas iniciales esenciales al paciente (ej: '¿Qué tratamiento buscas?', '¿Eres un paciente nuevo?'), organizando la información incluso antes de que tu equipo comience la atención. Esto ahorra tiempo y califica al lead, permitiendo que tu equipo se enfoque en la conversión.",
+        "flow_faq3_q": "¿Cómo funciona la capacitación del equipo?",
+        "flow_faq3_a": "Ofrecemos sesiones de capacitación en línea (grabadas y/o en vivo) para tu equipo de atención, enfocadas en técnicas de conversión, uso correcto de los guiones, gestión del embudo en el CRM y mejores prácticas para reenganchar pacientes. El objetivo es estandarizar y optimizar la atención para aumentar la tasa de citas.",
+        "flow_final_cta_title": "Convierte Leads en Pacientes y la Inconsistencia en Previsibilidad.",
+        "flow_final_cta_subtitle": "El Plan Flow es la alianza estratégica que tu clínica necesita para crecer de manera organizada e inteligente. ¿Desbloqueamos tu potencial?",
+        "flow_final_cta_btn": "Agendar Análisis Estratégico",
+        
+        "core360_page_title": "Plan Core360 - El Ecosistema Completo para tu Clínica | DentComm",
+        "core360_meta_description": "Integra marketing, atención, ventas y gestión con el Plan Core360. La solución para clínicas que buscan previsibilidad de agenda y crecimiento sostenible.",
+        "core360_hero_title": "Plan Core360: <span>El Ecosistema Completo</span> para Dominar tu Mercado",
+        "core360_hero_subtitle": "Integra marketing, atención, ventas y gestión. La solución definitiva para clínicas que buscan previsibilidad de agenda y crecimiento sostenible.",
+        "core360_hero_cta": "Dominar con el Core360",
+        "core360_porque_title": "¿Tu Crecimiento es Desorganizado y Difícil de Escalar? <br class=\"desktop-only\">Core360 Aporta Control y Previsibilidad.",
+        "core360_porque_subtitle": "Para clínicas con múltiples especialidades y un equipo estructurado que necesitan un sistema integrado para gestionar el recorrido del paciente de principio a fin y tomar decisiones basadas en datos.",
+        "core360_desafio_title": "Los Desafíos de las Clínicas en Expansión:",
+        "core360_desafio_1": "Crecimiento desorganizado y difícil de escalar de manera sostenible.",
+        "core360_desafio_2": "Equipo sin un estándar de atención, lo que resulta en una baja conversión.",
+        "core360_desafio_3": "Falta de seguimiento de resultados por campaña y canal de marketing.",
+        "core360_desafio_4": "ROI bajo o desconocido debido a la falta de una visión integrada.",
+        "core360_features_main_title": "Las Entregas del Ecosistema Core360:",
+        "core360_feat1_title": "Integración Total del Ecosistema",
+        "core360_feat1_desc": "Conectamos sitio web, páginas por especialidad, centro de citas, CRM, WhatsApp, correo electrónico y chatbots en un sistema único y cohesivo para una gestión impecable.",
+        "core360_feat2_title": "Tráfico Multicanal Flexible",
+        "core360_feat2_desc": "Creamos campañas ilimitadas en Meta Ads y Google Ads, distribuidas por objetivos (captación, autoridad, conversión) y con segmentaciones profundas por especialidad y comportamiento.",
+        "core360_feat3_title": "Landing Pages Personalizadas",
+        "core360_feat3_desc": "Desarrollamos landing pages ilimitadas y específicas para cada campaña o acción, con un diseño optimizado para la conversión, botón de WhatsApp, formularios y seguimiento de llamadas.",
+        "core360_feat4_title": "CRM y Automatización Conductual",
+        "core360_feat4_desc": "Implementamos embudos por canal y especialidad, con automatizaciones basadas en el comportamiento del lead (hizo clic, agendó, ignoró) y alertas internas para tu equipo.",
+        "core360_feat5_title": "Nutrición y Relación 360°",
+        "core360_feat5_desc": "Ejecutamos campañas ilimitadas de correo electrónico y WhatsApp con IA, nutriendo leads por interés (estética, dolor, prevención) y recuperando contactos inactivos con más de 90 días.",
+        "core360_feat6_title": "Inteligencia Artificial y Dashboards",
+        "core360_feat6_desc": "Utilizamos IA para la puntuación automática de leads y la optimización de campañas. Tendrás acceso a un dashboard ejecutivo con datos en tiempo real y ROI por especialidad.",
+        "core360_faq_title": "Preguntas Frecuentes sobre Core360",
+        "core360_faq1_q": "¿Cuántas especialidades necesita tener mi clínica para el Core360?",
+        "core360_faq1_a": "El plan está indicado para clínicas que tienen al menos dos especialidades activas. Esto nos permite crear embudos, campañas y nutriciones segmentadas, extrayendo el máximo potencial de la plataforma y garantizando un ROI más claro por área.",
+        "core360_faq2_q": "¿Qué es la 'automatización conductual'?",
+        "core360_faq2_a": "Significa que el sistema reacciona automáticamente a las acciones de tu lead. Por ejemplo, si un lead hace clic en un correo sobre 'implantes', puede ser movido automáticamente a un embudo específico de ese tratamiento y recibir más información sobre el tema, aumentando la posibilidad de conversión.",
+        "core360_faq3_q": "¿Cómo funciona el Dashboard Ejecutivo?",
+        "core360_faq3_a": "Es un panel en línea, accesible para ti y tu equipo, que centraliza las métricas más importantes en tiempo real: leads por campaña, costo por conversión, tasa de citas y el ROI por especialidad. Transforma datos complejos en insights visuales para una toma de decisiones rápida y estratégica.",
+        "core360_final_cta_title": "Deja de Adivinar y Comienza a Dominar tu Mercado con Datos.",
+        "core360_final_cta_subtitle": "El Plan Core360 es la alianza que tu clínica necesita para escalar de forma inteligente y sostenible. ¿Listo para tener una visión 360° de tu crecimiento?",
+        "core360_final_cta_btn": "Solicitar Demostración del Core360",
+        
+        "fullstack_page_title": "Plan Fullstack - La Operación Digital de tu Clínica, por Completo | DentComm",
+        "fullstack_meta_description": "Con el Plan Fullstack, DentComm asume toda la operación digital de tu clínica. Ideal para quienes buscan delegación total con confianza y máximo rendimiento.",
+        "fullstack_hero_title": "Plan Fullstack: <span>Enfócate en tu Paciente,</span> la Operación Digital es Nuestra",
+        "fullstack_hero_subtitle": "Asumimos completamente la operación digital de tu clínica, desde la estrategia hasta la ejecución. Crece con escala, calidad, previsibilidad y tiempo libre.",
+        "fullstack_hero_cta": "Quiero la Gestión Fullstack",
+        "fullstack_porque_title": "¿Sin Tiempo para Ocuparte del Marketing y las Ventas? <br class=\"desktop-only\">Con Fullstack, Delegas con Confianza.",
+        "fullstack_porque_subtitle": "Para clínicas con múltiples dentistas y grupos dentales que necesitan un socio que asuma la responsabilidad de generar resultados, estandarización y crecimiento a escala.",
+        "fullstack_desafio_title": "Los Dolores de Quien Necesita Delegar:",
+        "fullstack_desafio_1": "Falta de tiempo para ocuparse del área comercial y de marketing de la clínica.",
+        "fullstack_desafio_2": "Inconsistencia en la agenda entre los diferentes profesionales y especialidades.",
+        "fullstack_desafio_3": "Atención desorganizada y con una tasa de conversión por debajo del potencial.",
+        "fullstack_desafio_4": "Crecimiento sin datos, sin control y sin claridad sobre el retorno real de la inversión.",
+        "fullstack_features_main_title": "Fullstack: Tu Operación de Marketing y Ventas, Gestionada por Nosotros.",
+        "fullstack_feat1_title": "Operación 100% Gestionada",
+        "fullstack_feat1_desc": "DentComm asume toda la rutina de marketing y preventas, con un consultor exclusivo dedicado a tu proyecto, interactuando directamente con tu recepción para garantizar el máximo rendimiento.",
+        "fullstack_feat2_title": "Contenido e Imagen Premium",
+        "fullstack_feat2_desc": "Producimos 8 artes por semana, además de videos, animaciones y kits gráficos bajo demanda para campañas estacionales y promociones, con rediseño continuo de tu identidad visual.",
+        "fullstack_feat3_title": "CRM + Preventa Gestionada",
+        "fullstack_feat3_desc": "Nuestro equipo asume la gestión de los leads en el CRM, realizando la selección, calificación y programación activa de citas por WhatsApp o correo electrónico, enviando solo a los pacientes listos a tu clínica.",
+        "fullstack_feat4_title": "Soporte Total a la Clínica",
+        "fullstack_feat4_desc": "Ofrecemos consultoría de posicionamiento comercial, ayudamos en la estructura de atención y participamos en reuniones internas de tu clínica, si es necesario, para alinear la operación.",
+        "fullstack_feat5_title": "Inteligencia Estratégica",
+        "fullstack_feat5_desc": "Aplicamos IA en todo el recorrido del lead para la predicción de conversiones, sugerencia de campañas y puntuación de leads. Tendrás acceso total a los informes y sugerencias predictivas.",
+        "fullstack_feat6_title": "Informes y Paneles Avanzados",
+        "fullstack_feat6_desc": "Proporcionamos informes semanales completos de la operación y un dashboard interactivo con datos en tiempo real sobre CPL, CAC, tasa de conversión e ingresos atribuidos por campaña.",
+        "fullstack_faq_title": "Preguntas Frecuentes sobre el Plan Fullstack",
+        "fullstack_faq1_q": "¿Qué significa 'preventa gestionada' en la práctica?",
+        "fullstack_faq1_a": "Significa que nuestro equipo de especialistas asume el primer contacto con todos los leads generados. Calificamos, nutrimos y programamos la cita directamente en tu sistema. Tu recepción solo recibe la confirmación del paciente agendado, eliminando el trabajo de atención inicial y maximizando la tasa de conversión.",
+        "fullstack_faq2_q": "¿Este plan es adecuado para un dentista autónomo?",
+        "fullstack_faq2_a": "El Plan Fullstack está diseñado para estructuras más robustas, como clínicas con múltiples dentistas, diversas especialidades o grupos dentales. Los dentistas autónomos con un alto volumen y que deseen una delegación total también pueden beneficiarse, pero generalmente los planes Base, Flow o Core360 son más adecuados para empezar.",
+        "fullstack_faq3_q": "¿Cómo es la comunicación entre DentComm y mi equipo?",
+        "fullstack_faq3_a": "La comunicación es constante y fluida. Asignamos un consultor exclusivo a tu proyecto que mantendrá contacto diario con tu recepción o gerente a través de canales como WhatsApp o Slack. Además, realizamos reuniones ilimitadas de alineación y rendimiento, según las necesidades de la operación.",
+        "fullstack_final_cta_title": "Tu única preocupación será ofrecer la mejor atención. El resto, déjalo en nuestras manos.",
+        "fullstack_final_cta_subtitle": "El Plan Fullstack es la alianza definitiva para clínicas que buscan un crecimiento a escala con tranquilidad y confianza. ¿Hablamos?",
+        "fullstack_final_cta_btn": "Solicitar Consultoría Fullstack"
     }
   };
 
@@ -363,17 +649,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     htmlRoot.setAttribute("lang", lang === "pt" ? "pt-BR" : "es");
 
-    let pageTitleKey = document.body.classList.contains('page-blog') ? "blog_page_title" : "page_title";
-    let metaDescKey = document.body.classList.contains('page-blog') ? "blog_meta_description" : "meta_description_index";
+    let pageTitleKey = "page_title"; 
+    let metaDescKey = "meta_description_index";
 
-    if (document.body.classList.contains('page-single-post')) {
-      pageTitleKey = "artigo1_seo_title";
-      metaDescKey = "artigo1_seo_desc";
+    if (document.body.classList.contains('page-blog')) {
+        pageTitleKey = "blog_page_title";
+        metaDescKey = "blog_meta_description";
+    } else if (document.body.classList.contains('page-single-post')) {
+        pageTitleKey = "artigo1_seo_title";
+        metaDescKey = "artigo1_seo_desc";
+    } else if (document.body.classList.contains('page-plano-base')) {
+        pageTitleKey = "base_page_title";
+        metaDescKey = "base_meta_description";
+    } else if (document.body.classList.contains('page-plano-flow')) {
+        pageTitleKey = "flow_page_title";
+        metaDescKey = "flow_meta_description";
+    } else if (document.body.classList.contains('page-plano-core360')) {
+        pageTitleKey = "core360_page_title";
+        metaDescKey = "core360_meta_description";
+    } else if (document.body.classList.contains('page-plano-fullstack')) {
+        pageTitleKey = "fullstack_page_title";
+        metaDescKey = "fullstack_meta_description";
     }
     
-    document.title = translations[lang][pageTitleKey];
+    document.title = translations[lang][pageTitleKey] || translations['pt'][pageTitleKey];
     const metaDescriptionTag = document.querySelector('meta[name="description"]');
-    if (metaDescriptionTag) {
+    if (metaDescriptionTag && translations[lang][metaDescKey]) {
         metaDescriptionTag.setAttribute('content', translations[lang][metaDescKey]);
     }
 
@@ -386,7 +687,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     document.querySelectorAll("[data-translate]").forEach(el => {
       const key = el.dataset.translate;
-      if (translations[lang][key]) {
+      if (translations[lang][key] !== undefined) {
         el.innerHTML = translations[lang][key];
       }
     });
@@ -406,11 +707,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (translations[lang][key]) el.setAttribute("aria-label", translations[lang][key]);
     });
     
-    if (currentYearSpan && translations[lang]["footer_copyright"]) {
-        const year = new Date().getFullYear();
-        const copyrightText = translations[lang]["footer_copyright"].replace("{CURRENT_YEAR}", year);
-        const pElement = currentYearSpan.parentElement;
-        pElement.innerHTML = copyrightText;
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
     }
     localStorage.setItem("language", lang);
   }
@@ -481,10 +780,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const elementsToAnimate = document.querySelectorAll(
-    ".hero-content, .section-header, .sobre-content p, " +
+    ".hero-content, .plano-lp-hero-content, .section-header, .sobre-content p, " +
     ".benefit-card, .plano-card, .depoimento-card, .ebook-item, " +
     ".formulario-contato-col, .footer-column, .footer-bottom-bar, " +
-    ".blog-post-preview, .sidebar-widget"
+    ".blog-post-preview, .sidebar-widget, .desafios-col, .solucao-img-col, " +
+    ".feature-card-momentum, .faq-item"
   );
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -515,13 +815,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   
-    const navLinksForScroll = document.querySelectorAll(".nav-links li a[href^='index.html#']");
+    const navLinksForScroll = document.querySelectorAll(".nav-links li a[href*='index.html#']");
     const sections = Array.from(navLinksForScroll).map(link => {
         const sectionId = new URL(link.href).hash;
         return sectionId ? document.querySelector(sectionId) : null;
     }).filter(section => section !== null);
 
-    if (sections.length > 0) {
+    if (window.location.pathname.includes('index.html') && sections.length > 0) {
         window.addEventListener("scroll", () => {
             let currentActiveFound = false;
             const fromTop = window.scrollY + 120;
@@ -531,7 +831,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (!correspondingLink) return;
 
                 if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-                    navLinksForScroll.forEach(link => link.classList.remove("active"));
+                    navLinksForScroll.forEach(l => l.classList.remove("active"));
                     correspondingLink.classList.add("active");
                     currentActiveFound = true;
                 }
