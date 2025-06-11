@@ -10,37 +10,34 @@
 }
 
 :root {
-    --cor-primaria: #0056b3;
-    --cor-primaria-escura: #004494;
-    --cor-primaria-muito-escura: #00367a;
-    --cor-primaria-clara: #a2d2ff;
-    --cor-primaria-muito-clara: #e7f1ff;
+    /* Nova Paleta de Cores Baseada no Branding */
+    --cor-primaria: #16FEED; /* Fluorescent Cyan */
+    --cor-primaria-escura: #10c9b8;
+    --cor-primaria-muito-escura: #0b8f81;
+    --cor-primaria-clara: #a9fcf7;
+    --cor-primaria-muito-clara: #e6fefc;
 
-    /* Adicionando valores RGB para uso em rgba() */
-    --cor-primaria-escura-rgb: 0, 68, 148;
-    --cor-primaria-muito-escura-rgb: 0, 54, 122;
-
-
-    --cor-secundaria: #ffc107;
-    --cor-secundaria-escura: #e0a800;
-
-    --cor-texto-principal: #212529;
-    --cor-texto-secundario: #495057;
+    /* RGB para Overlays */
+    --cor-primaria-rgb: 22, 254, 237;
+    --cor-fundo-escuro-rgb: 33, 33, 33;
+    
+    --cor-texto-principal: #212529; /* Próximo ao Eerie Black para leitura */
+    --cor-texto-secundario: #676767; /* Dim Gray */
     --cor-texto-claro: #f8f9fa;
     --cor-texto-hero: #ffffff;
     --cor-texto-footer: #c0c8d0;
 
-    --cor-fundo-pagina: #f8f9fa; /* Fundo principal da página */
-    --cor-fundo-secao: #ffffff;   /* Fundo para seções como "Sobre" */
-    --cor-fundo-secao-alternativa: #f4f7f9; /* Usado em .bg-light */
-    --cor-fundo-escuro: #1a1e21;
+    --cor-fundo-pagina: #f8f9fa; 
+    --cor-fundo-secao: #ffffff;
+    --cor-fundo-secao-alternativa: #f4f7f9;
+    --cor-fundo-escuro: #212121; /* Eerie Black */
 
     --cor-borda-sutil: #dee2e6;
     --cor-borda-input: #ced4da;
 
-    --sombra-card-suave: 0 8px 24px rgba(0, 86, 179, 0.07);
-    --sombra-card-media: 0 12px 35px rgba(0, 86, 179, 0.1);
-    --sombra-card-forte: 0 18px 50px rgba(0, 86, 179, 0.15);
+    --sombra-card-suave: 0 8px 24px rgba(22, 254, 237, 0.08);
+    --sombra-card-media: 0 12px 35px rgba(22, 254, 237, 0.12);
+    --sombra-card-forte: 0 18px 50px rgba(22, 254, 237, 0.18);
     --sombra-texto-leve: 0 2px 8px rgba(0, 0, 0, 0.3);
 
     --raio-borda-padrao: 10px;
@@ -53,7 +50,8 @@
     --espacamento-secao-vertical: clamp(4rem, 10vw, 7rem);
     --espacamento-container-horizontal: 1.5rem;
 
-    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* Nova Tipografia Baseada no Branding */
+    --font-family-base: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
@@ -63,7 +61,7 @@ html {
 
 body {
     font-family: var(--font-family-base);
-    background-color: var(--cor-fundo-pagina); /* Fundo da página principal */
+    background-color: var(--cor-fundo-pagina);
     color: var(--cor-texto-principal);
     line-height: 1.7;
     text-rendering: optimizeLegibility;
@@ -94,13 +92,12 @@ a:hover {
 :focus-visible {
     outline: 3px solid var(--cor-primaria-clara);
     outline-offset: 2px;
-    box-shadow: 0 0 0 4px rgba(0, 86, 179, 0.25);
+    box-shadow: 0 0 0 4px rgba(22, 254, 237, 0.25);
     border-radius: 4px;
 }
 .btn-primary:focus-visible, .btn-secondary:focus-visible, .lang-btn:focus-visible {
     outline: none;
 }
-
 
 /* ==========================================================================
    2. CLASSES UTILITÁRIAS
@@ -118,7 +115,7 @@ a:hover {
     padding-bottom: var(--espacamento-secao-vertical);
 }
 
-.bg-light { /* Usado para seções como "Benefícios" e "Depoimentos" que ficam sobre o fundo da página */
+.bg-light {
     background-color: var(--cor-fundo-secao-alternativa);
 }
 
@@ -137,7 +134,7 @@ a:hover {
     position: absolute;
     top: 10px; left: 10px;
     background-color: var(--cor-primaria);
-    color: var(--cor-texto-claro);
+    color: var(--cor-fundo-escuro);
     padding: 0.75rem 1.25rem;
     z-index: 9999;
     border-radius: var(--raio-borda-padrao);
@@ -165,7 +162,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     margin-bottom: 3.5rem;
 }
 .section-header h2 {
-    color: var(--cor-primaria-escura);
+    color: var(--cor-texto-principal);
 }
 .section-subtitle {
     font-size: clamp(1.1rem, 2.5vw, 1.25rem);
@@ -177,12 +174,12 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 .hero-subtitle {
     font-size: clamp(1.15rem, 3vw, 1.5rem);
     margin-bottom: 2.5rem;
-    opacity: 0.95; /* Aumentar opacidade para melhor leitura */
+    opacity: 0.95;
     font-weight: 400;
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Sombra mais forte para o subtítulo */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 /* ==========================================================================
@@ -206,37 +203,33 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     text-decoration: none;
 }
 .btn-primary:focus-visible, .btn-secondary:focus-visible, .btn-plano:focus-visible {
-    box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.35);
-}
-
-.btn-primary:hover { color: rgb(204, 204, 204);
+    box-shadow: 0 0 0 0.25rem rgba(22, 254, 237, 0.35);
 }
 
 .btn-primary {
-    color: var(--cor-texto-claro);
-    background-image: linear-gradient(140deg, var(--cor-primaria) 0%, var(--cor-primaria-escura) 100%);
-    border-color: var(--cor-primaria-escura);
-    box-shadow: 0 6px 18px rgba(0, 70, 148, 0.2);
+    color: var(--cor-fundo-escuro);
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    box-shadow: 0 6px 18px rgba(22, 254, 237, 0.25);
 }
 .btn-primary:hover, .btn-primary:focus {
-    background-image: linear-gradient(140deg, var(--cor-primaria-escura) 0%, var(--cor-primaria-muito-escura) 100%);
-    border-color: var(--cor-primaria-muito-escura);
+    background-color: var(--cor-primaria-clara);
+    border-color: var(--cor-primaria-clara);
     transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 8px 22px rgba(0, 51, 102, 0.25);
+    box-shadow: 0 8px 22px rgba(22, 254, 237, 0.3);
 }
 
 .btn-secondary {
-    color: var(--cor-primaria);
+    color: var(--cor-texto-principal);
     background-color: var(--cor-fundo-secao);
-    border-color: var(--cor-primaria); /* Manter a borda primária */
-    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.08);
+    border-color: var(--cor-texto-secundario); 
 }
 .btn-secondary:hover, .btn-secondary:focus {
-    background-color: var(--cor-primaria-muito-clara);
-    color: var(--cor-primaria-escura);
-    /* border-color: var(--cor-primaria-escura); Mantém a cor primária ou escurece */
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 6px 16px rgba(0, 86, 179, 0.12);
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-texto-principal);
+    border-color: var(--cor-texto-principal);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .btn-lg {
@@ -290,29 +283,24 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .nav-links li a:hover,
 .nav-links li a.active {
-    color: var(--cor-primaria);
+    color: var(--cor-primaria-escura);
     border-bottom-color: var(--cor-primaria);
 }
 .nav-actions { display: flex; align-items: center; gap: 1rem; }
-/* ==========================================================================
-   5. NAVBAR (ou onde estiver o .lang-btn)
-   ========================================================================== */
-
-/* ... (outros estilos da navbar) ... */
 
 .lang-btn {
     background-color: var(--cor-fundo-secao-alternativa);
     border: 1px solid var(--cor-borda-sutil);
-    padding: 0.6rem 1rem; /* Ajustado para melhor encaixe */
-    border-radius: 25px; /* Mais arredondado para um visual "pill" */
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
     font-weight: 500;
     color: var(--cor-texto-secundario);
     cursor: pointer;
     transition: var(--transicao-padrao);
     display: flex;
     align-items: center;
-    gap: 0.7rem; /* Espaço entre bandeira e texto */
-    line-height: 1; /* Para alinhar verticalmente */
+    gap: 0.7rem;
+    line-height: 1;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
@@ -320,14 +308,13 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     background-color: var(--cor-primaria-muito-clara);
     border-color: var(--cor-primaria-clara);
     color: var(--cor-primaria-escura);
-    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.12);
+    box-shadow: 0 4px 12px rgba(22, 254, 237, 0.15);
     transform: translateY(-2px);
 }
 .lang-btn:focus-visible {
     outline: 2px solid var(--cor-primaria);
     outline-offset: 3px;
 }
-
 .lang-btn .flag-icon {
     display: flex;
     align-items: center;
@@ -335,9 +322,9 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     width: 22px;
     height: 16px;
     overflow: hidden;
-    border-radius: 3px; /* Raio sutil na bandeira */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Sombra na bandeira */
-    flex-shrink: 0; /* Evitar que a bandeira encolha */
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    flex-shrink: 0;
 }
 .lang-btn .flag-icon svg {
     display: block;
@@ -345,27 +332,16 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     height: 100%;
     object-fit: cover;
 }
-
 .lang-btn .lang-text {
-    font-size: 0.85rem; /* Texto um pouco menor para caber bem */
+    font-size: 0.85rem;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.03em;
-    color: var(--cor-texto-principal); /* Texto do idioma mais escuro para contraste */
+    color: var(--cor-texto-principal);
     transition: color 0.3s ease;
 }
 .lang-btn:hover .lang-text, .lang-btn:focus .lang-text {
     color: var(--cor-primaria-escura);
-}
-
-/* Ajustes no mobile se necessário */
-@media (max-width: 992px) {
-    .nav-actions .lang-btn {
-        padding: 0.5rem 0.8rem; /* Um pouco menor no mobile */
-    }
-    .lang-btn .lang-text {
-        font-size: 0.8rem;
-    }
 }
 
 .nav-toggle {
@@ -373,14 +349,14 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: var(--cor-primaria);
+    color: var(--cor-primaria-escura);
     cursor: pointer;
     padding: 0.5rem;
     margin-right: -0.5rem;
     transition: color 0.2s ease, transform 0.2s ease;
 }
 .nav-toggle:hover {
-    color: var(--cor-primaria-escura);
+    color: var(--cor-primaria);
     transform: scale(1.1);
 }
 
@@ -426,10 +402,12 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
         border: 2px solid var(--cor-primaria);
     }
     .nav-toggle { display: flex; align-items: center; }
+    .lang-btn { padding: 0.5rem 0.8rem; }
+    .lang-btn .lang-text { font-size: 0.8rem; }
 }
 
 /* ==========================================================================
-   6. HERO SECTION (INDEX.HTML) - CORREÇÃO DE FUNDO
+   6. HERO SECTION
    ========================================================================== */
 .hero {
     position: relative;
@@ -441,20 +419,16 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    /* Fallback de cor sólida caso a imagem não carregue ou para o gradiente do overlay */
-    background-color: var(--cor-primaria-muito-escura); 
+    background-color: var(--cor-fundo-escuro); 
 }
-.main-hero-bg { /* Aplicar imagem aqui */
-    /* Se for usar imagem, descomente e ajuste o path */
-    /* background-image: url('midia/hero-bg-index.jpg'); */
+.main-hero-bg {
     background-size: cover;
     background-position: center center;
 }
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    /* Gradiente mais forte para garantir contraste se a imagem for clara */
-    background-image: linear-gradient(75deg, rgba(var(--cor-primaria-muito-escura-rgb), 0.92) 0%, rgba(var(--cor-primaria-escura-rgb), 0.75) 100%);
+    background-image: linear-gradient(75deg, rgba(var(--cor-fundo-escuro-rgb), 0.95) 0%, rgba(var(--cor-fundo-escuro-rgb), 0.75) 100%);
     z-index: 1;
 }
 .hero-content {
@@ -464,16 +438,17 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .hero h1 {
     color: var(--cor-texto-hero);
-    text-shadow: 0 3px 12px rgba(0,0,0,0.6); /* Sombra mais pronunciada */
+    text-shadow: 0 3px 12px rgba(0,0,0,0.6);
 }
 .hero h1 span {
-    color: var(--cor-primaria-clara);
+    color: var(--cor-primaria);
+    font-family: 'Parslay', cursive; /* Exemplo de uso da fonte de destaque */
 }
 
 /* ==========================================================================
-   7. SEÇÕES GENÉRICAS (SOBRE, BENEFÍCIOS, ETC.) - CORREÇÃO DE FUNDO
+   7. SEÇÕES GENÉRICAS
    ========================================================================== */
-.sobre { /* Seção "Sobre" com fundo branco */
+.sobre {
     background-color: var(--cor-fundo-secao);
 }
 .sobre-content p {
@@ -483,10 +458,10 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     margin-bottom: 1.5rem;
 }
 .sobre-content p:last-child { margin-bottom: 0; }
-.sobre-content strong { color: var(--cor-primaria-escura); font-weight: 600; }
+.sobre-content strong { color: var(--cor-texto-principal); font-weight: 600; }
 
-.benefits { /* Seção "Benefícios" com fundo alternativo para contraste */
-    background-color: var(--cor-fundo-secao-alternativa); /* ou var(--cor-fundo-pagina) se preferir */
+.benefits {
+    background-color: var(--cor-fundo-secao-alternativa);
 }
 .benefit-grid {
     display: grid;
@@ -494,10 +469,10 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     gap: 2rem;
 }
 .benefit-card {
-    background-color: var(--cor-fundo-secao); /* Cards sempre brancos */
+    background-color: var(--cor-fundo-secao);
     border-radius: var(--raio-borda-grande);
     padding: 2.5rem 2rem;
-    box-shadow: var(--sombra-card-suave);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: var(--transicao-padrao);
     display: flex;
@@ -506,7 +481,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .benefit-card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: var(--sombra-card-media);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
 }
 .benefit-icon {
     font-size: 2.8rem;
@@ -523,7 +498,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .benefit-card h3 {
     font-size: 1.3rem;
-    color: var(--cor-primaria-escura);
+    color: var(--cor-texto-principal);
     margin-bottom: 0.75rem;
 }
 .benefit-card p {
@@ -533,51 +508,31 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 
 /* ==========================================================================
-   8. SEÇÃO DE PLANOS (INDEX.HTML) - CORREÇÃO ALINHAMENTO APEX
+   8. SEÇÃO DE PLANOS (NOVO LAYOUT)
    ========================================================================== */
 .planos-section {
-    background-color: var(--cor-fundo-secao); /* Planos sobre fundo branco */
+    background-color: var(--cor-fundo-secao);
 }
-.planos-container {
+.planos-container-new {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
 }
-@media (min-width: 768px) {
-    .planos-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width: 1024px) {
-    .planos-container {
-        grid-template-columns: 1fr 1.2fr 1fr;
-        gap: 2rem;
-    }
-    /* Correção para o Plano APEX na Index */
-    .plano-card.full-span-card {
-        grid-column: 1 / -1;
-        max-width: 550px;
-        margin-left: auto;  /* Centraliza o card na linha */
-        margin-right: auto; /* Centraliza o card na linha */
-        /* O conteúdo interno (.plano-content) já é flex column,
-           o alinhamento do texto dentro dele é controlado por text-align nos filhos,
-           que é 'center' para .plano-header e 'left' (padrão) para .plano-lista-features. */
-    }
-}
+
 .plano-card {
-    background-color: var(--cor-fundo-secao-alternativa); /* Cards dos planos com fundo alternativo */
+    background-color: var(--cor-fundo-secao-alternativa);
     border-radius: var(--raio-borda-grande);
-    box-shadow: var(--sombra-card-suave);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04);
     transition: var(--transicao-padrao);
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 2rem;
+    padding: 2.2rem;
     border: 1px solid var(--cor-borda-sutil);
 }
 .plano-card:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: var(--sombra-card-media);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 .plano-content { flex-grow: 1; display: flex; flex-direction: column; }
 .plano-header { text-align: center; margin-bottom: 1.5rem; }
@@ -589,20 +544,20 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .plano-nome {
     font-size: 1.8rem;
-    color: var(--cor-primaria-escura);
+    color: var(--cor-texto-principal);
     margin-bottom: 0.5rem;
 }
 .plano-ideal-para {
     font-size: 0.9rem;
     color: var(--cor-texto-secundario);
-    min-height: 40px;
-    line-height: 1.4;
+    min-height: 55px;
+    line-height: 1.5;
 }
 .plano-lista-features {
     padding-left: 0;
     margin-bottom: 2rem;
     flex-grow: 1;
-    text-align: left; /* Garantir que a lista fique alinhada à esquerda */
+    text-align: left;
 }
 .plano-lista-features li {
     position: relative;
@@ -621,95 +576,37 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     font-size: 1.1em;
 }
 .plano-footer { margin-top: auto; text-align: center; }
+
 .btn-plano {
     width: 100%;
-    background-color: var(--cor-fundo-secao);
-    color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+    background-color: transparent;
+    color: var(--cor-texto-principal);
+    border-color: var(--cor-texto-secundario);
 }
 .btn-plano:hover {
     background-color: var(--cor-primaria);
-    color: var(--cor-texto-claro);
+    color: var(--cor-fundo-escuro);
+    border-color: var(--cor-primaria);
 }
 
-.plano-card.destaque {
-    background-image: linear-gradient(150deg, var(--cor-primaria) 0%, var(--cor-primaria-escura) 100%);
-    color: var(--cor-texto-claro);
-    box-shadow: var(--sombra-card-forte);
-    border: none;
-    transform: scale(1.03);
-    z-index: 5;
-}
-.plano-card.destaque:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 25px 60px rgba(0, 70, 148, 0.2);
-}
-.plano-card.destaque .plano-icon,
-.plano-card.destaque .plano-nome,
-.plano-card.destaque .plano-ideal-para,
-.plano-card.destaque .plano-lista-features li {
-    color: var(--cor-texto-claro);
-}
-.plano-card.destaque .plano-lista-features li::before {
-    color: var(--cor-primaria-clara);
-}
 .btn-plano-destaque {
-    background-color: var(--cor-fundo-secao);
-    color: var(--cor-primaria-escura);
-    border-color: var(--cor-fundo-secao);
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-escuro);
+    border-color: var(--cor-primaria);
     font-weight: 700;
 }
 .btn-plano-destaque:hover {
     background-color: var(--cor-primaria-clara);
 }
-.plano-tag-destaque {
-    position: absolute;
-    top: 0; left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto-principal);
-    font-size: 0.85rem;
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    font-weight: 700;
-    box-shadow: 0 3px 8px rgba(255,193,7,0.3);
-    z-index: 10;
-}
-
-.plano-card.plano-apex { /* O .full-span-card já é aplicado no media query */
-    border-top: 5px solid var(--cor-primaria);
-}
-.plano-apex-background-decor {
-    position: absolute;
-    top: -20px; right: -20px;
-    width: 100px; height: 100px;
-    background-image: linear-gradient(135deg, var(--cor-primaria-clara) 0%, var(--cor-primaria) 100%);
-    border-radius: var(--raio-borda-circulo);
-    opacity: 0.1;
-    z-index: -1;
-    pointer-events: none;
-}
-.btn-plano-apex {
-    background-image: linear-gradient(140deg, var(--cor-primaria) 0%, var(--cor-primaria-escura) 100%);
-    color: var(--cor-texto-claro);
-    border-color: var(--cor-primaria-escura);
-}
-.btn-plano-apex:hover {
-    background-image: linear-gradient(140deg, var(--cor-primaria-escura) 0%, var(--cor-primaria-muito-escura) 100%);
-}
 
 .planos-cta-final { margin-top: 3.5rem; }
 .planos-cta-final p { font-size: 1.15rem; margin-bottom: 1.5rem; color: var(--cor-texto-secundario); }
-
-/* ... (Restante do CSS: Depoimentos, Contato, Tooltip, Footer, WhatsApp, Animações) ... */
-/* As seções abaixo permanecem como na versão anterior, pois não foram reportados problemas nelas. */
-/* Se precisar de ajustes, me avise. */
 
 /* ==========================================================================
    9. DEPOIMENTOS
    ========================================================================== */
 .depoimentos {
-    background-color: var(--cor-fundo-secao-alternativa); /* Ajustado para contraste */
+    background-color: var(--cor-fundo-secao-alternativa);
 }
 .depoimentos-grid {
     display: grid;
@@ -720,7 +617,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     background-color: var(--cor-fundo-secao);
     border-radius: var(--raio-borda-grande);
     padding: 2rem;
-    box-shadow: var(--sombra-card-suave);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
     transition: var(--transicao-padrao);
     display: flex;
     flex-direction: column;
@@ -728,7 +625,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .depoimento-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--sombra-card-media);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
 }
 .depoimento-texto {
     font-style: italic;
@@ -753,7 +650,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .depoimento-autor {
     font-style: normal;
-    color: var(--cor-primaria-escura);
+    color: var(--cor-texto-principal);
     font-size: 1rem;
     font-weight: 600;
     margin-top: auto;
@@ -780,7 +677,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     }
 }
 .materiais-preview-col h3, .formulario-contato-col h3 {
-    color: var(--cor-primaria-escura);
+    color: var(--cor-texto-principal);
     margin-bottom: 1.25rem;
 }
 .materiais-preview-col p, .formulario-contato-col p {
@@ -801,7 +698,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .ebook-item:hover {
     transform: translateY(-6px) scale(1.01);
-    box-shadow: 0 8px 20px rgba(0, 86, 179, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
     border-color: var(--cor-primaria-clara);
 }
 .ebook-cover {
@@ -810,7 +707,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
     box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     flex-shrink: 0;
 }
-.ebook-title { font-weight: 600; font-size: 1rem; }
+.ebook-title { font-weight: 600; font-size: 1rem; color: var(--cor-texto-principal); }
 
 .contact-form-fields { display: flex; flex-direction: column; gap: 1.25rem; }
 .contact-form-fields div { position: relative; }
@@ -827,7 +724,7 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 .contact-form-fields input:focus, .contact-form-fields textarea:focus {
     border-color: var(--cor-primaria);
-    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.2);
+    box-shadow: 0 0 0 0.2rem rgba(22, 254, 237, 0.2);
     outline: none;
 }
 .contact-form-fields textarea { min-height: 140px; resize: vertical; }
@@ -851,45 +748,8 @@ h3 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 1rem; font-weight: 
 }
 
 /* ==========================================================================
-   11. TOOLTIP
+   11. TOOLTIP (Removido por simplicidade, pode ser adicionado se necessário)
    ========================================================================== */
-.tooltip { position: relative; cursor: help; border-bottom: 1px dashed var(--cor-primaria); }
-.tooltip .tooltiptext {
-    visibility: hidden;
-    opacity: 0;
-    width: 230px;
-    background-color: var(--cor-texto-principal);
-    color: var(--cor-texto-claro);
-    text-align: left;
-    border-radius: var(--raio-borda-padrao);
-    padding: 0.9rem 1.1rem;
-    position: absolute;
-    z-index: 100;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-10px);
-    margin-bottom: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    pointer-events: none;
-    transition: opacity 0.25s ease, transform 0.25s ease;
-}
-.tooltip:hover .tooltiptext, .tooltip:focus-within .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-}
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%; left: 50%;
-    transform: translateX(-50%);
-    border-width: 6px;
-    border-style: solid;
-    border-color: var(--cor-texto-principal) transparent transparent transparent;
-}
-
 
 /* ==========================================================================
    12. FOOTER
