@@ -12,9 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const translations = {
     pt: {
-        // --- GERAL & INDEX.HTML (PT) ---
-        "page_title": "DentComm - Marketing para Dentistas e Clínicas Odontológicas",
-        "meta_description_index": "Potencialize sua clínica odontológica com as soluções de marketing digital da DentComm. Atraia mais pacientes, construa autoridade e alcance resultados incríveis.",
+        "page_title": "DentComm: Marketing Odontológico Focado em Resultados",
+        "meta_description_index": "Marketing para dentistas e clínicas. A DentComm cria estratégias para atrair pacientes, construir autoridade e gerar crescimento com previsibilidade e ROI.",
         "skip_to_content": "Pular para o conteúdo principal",
         "nav_sobre": "Sobre",
         "nav_beneficios": "Benefícios",
@@ -107,8 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "footer_siga_title": "Siga a DentComm",
         "footer_copyright": "© {CURRENT_YEAR} DentComm. Todos os direitos reservados.",
         "footer_madewithlove": "Feito com 💙 para dentistas e clínicas que querem se destacar.",
-        "blog_page_title": "Blog DentComm - Dicas e Estratégias de Marketing Odontológico",
-        "blog_meta_description": "Acompanhe o blog da DentComm para dicas, insights e estratégias avançadas de marketing digital para dentistas e clínicas odontológicas.",
+        "blog_page_title": "Blog DentComm | Marketing e Gestão para Clínicas Odontológicas",
+        "blog_meta_description": "Acompanhe o blog da DentComm para dicas, insights e estratégias avançadas de marketing digital e gestão para dentistas e clínicas odontológicas.",
         "blog_hero_title": "Blog DentComm",
         "blog_hero_subtitle": "Insights, dicas e as últimas tendências em marketing digital para impulsionar sua clínica odontológica.",
         "blog_articles_title": "Nossos Artigos",
@@ -150,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "sidebar_title_accessible": "Barra Lateral do Blog",
         "footer_sobre_blog_link": "Blog",
         "ver_outros_planos": "Ver todos os planos",
-        "artigo1_seo_title": "Como Atrair Mais Pacientes para sua Clínica Odontológica em 2025 | Blog DentComm",
+        "artigo1_seo_title": "Como Atrair Pacientes para Clínica Odontológica em 2025 | DentComm",
         "artigo1_seo_desc": "Aprenda estratégias eficazes de marketing digital, SEO local e redes sociais para aumentar o fluxo de pacientes na sua clínica odontológica neste ano.",
         "artigo_author_by": "Por",
         "author_name_dentcomm": "Equipe DentComm",
@@ -182,12 +181,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "tag_atrair_pacientes": "Atrair Pacientes",
         "blog_share_text": "Compartilhe:",
         "blog_related_title": "Você Também Pode Gostar",
-        
-        "base_page_title": "Plano Base - Estrutura Digital Essencial | DentComm",
-        "base_meta_description": "O Plano Base da DentComm oferece a estrutura mínima para dentistas atraírem pacientes, construírem autoridade digital e entenderem o retorno de suas ações.",
+        "btn_cta_padrao": "Agendar Análise Estratégica",
+        "base_page_title": "Plano Base: Estrutura Digital para Dentistas | DentComm",
+        "base_meta_description": "Conheça o Plano Base: a solução ideal para dentistas que buscam iniciar sua captação de pacientes online com landing page, campanhas e ROI claro.",
         "base_hero_title": "Plano Base: <span>A Estrutura Essencial</span> para Atrair Seus Primeiros Pacientes",
         "base_hero_subtitle": "Entregamos a estrutura mínima para qualquer dentista construir autoridade digital e entender, na prática, o retorno de suas ações.",
-        "base_hero_cta": "Quero o Plano Base",
         "base_porque_title": "Começando no Digital ou Precisando de Foco? <br class=\"desktop-only\">O Plano Base é o Ponto de Partida Certo.",
         "base_porque_subtitle": "Ideal para dentistas que desejam captar pacientes de forma ativa, mas precisam de uma solução de baixo risco, com clareza e sem complexidade.",
         "base_desafio_title": "As Dores que o Plano Base Resolve:",
@@ -215,13 +213,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "base_faq3_a": "De forma alguma. O objetivo do Plano Base é justamente oferecer a estrutura e o conhecimento para que você não precise se preocupar com isso. Nós cuidamos de toda a parte técnica e estratégica, e orientamos você nas tomadas de decisão.",
         "base_final_cta_title": "Dê o Primeiro Passo para uma Agenda Cheia e Previsível.",
         "base_final_cta_subtitle": "O Plano Base é a parceria ideal para iniciar sua jornada de crescimento com o pé direito. Vamos conversar sobre seus objetivos?",
-        "base_final_cta_btn": "Falar com um Especialista",
-
-        "flow_page_title": "Plano Flow - Automação e Escala para sua Clínica | DentComm",
-        "flow_meta_description": "Eleve o nível de captação, conversão e gestão da jornada do paciente com o Plano Flow da DentComm. Ideal para quem precisa crescer com controle e inteligência.",
+        "flow_page_title": "Plano Flow: Automação e Marketing para Clínicas | DentComm",
+        "flow_meta_description": "Evolua sua captação de pacientes com o Plano Flow. Oferecemos automação, campanhas multicanal e inteligência de dados para escalar sua clínica.",
         "flow_hero_title": "Plano Flow: <span>Escale sua Captação</span> com Automação e Inteligência",
         "flow_hero_subtitle": "Ideal para dentistas que já estão no digital, mas precisam crescer com controle, previsibilidade e uma gestão otimizada da jornada do paciente.",
-        "flow_hero_cta": "Quero Escalar com o Flow",
         "flow_porque_title": "Sua Captação de Pacientes Está Inconstante? <br class=\"desktop-only\">O Flow Traz Previsibilidade e Crescimento.",
         "flow_porque_subtitle": "Se você sente que está perdendo oportunidades por falta de tempo ou automação e precisa de um método para aumentar o volume de agendamentos, o Plano Flow é a evolução que sua clínica precisa.",
         "flow_desafio_title": "Os Desafios que Superamos com o Flow:",
@@ -251,13 +246,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "flow_faq3_a": "Oferecemos sessões de treinamento online (gravadas e/ou ao vivo) para sua equipe de atendimento, focadas em técnicas de conversão, uso correto dos scripts, gestão do funil no CRM e melhores práticas para reengajar pacientes. O objetivo é padronizar e otimizar o atendimento para aumentar a taxa de agendamento.",
         "flow_final_cta_title": "Transforme Leads em Pacientes e Inconsistência em Previsibilidade.",
         "flow_final_cta_subtitle": "O Plano Flow é a parceria estratégica que sua clínica precisa para crescer de forma organizada e inteligente. Vamos destravar seu potencial?",
-        "flow_final_cta_btn": "Agendar Análise Estratégica",
-        
-        "core360_page_title": "Plano Core360 - O Ecossistema Completo para sua Clínica | DentComm",
-        "core360_meta_description": "Integre marketing, atendimento, vendas e gestão com o Plano Core360. A solução para clínicas que buscam previsibilidade de agenda e crescimento sustentável.",
+        "core360_page_title": "Plano Core360: Ecossistema de Marketing Integrado | DentComm",
+        "core360_meta_description": "Integre marketing, vendas e gestão com o Plano Core360 da DentComm. A solução completa para clínicas que buscam escalar com controle, dados e previsibilidade.",
         "core360_hero_title": "Plano Core360: <span>O Ecossistema Completo</span> para Dominar seu Mercado",
         "core360_hero_subtitle": "Integre marketing, atendimento, vendas e gestão. A solução definitiva para clínicas que buscam previsibilidade de agenda e crescimento sustentável.",
-        "core360_hero_cta": "Dominar com o Core360",
         "core360_porque_title": "Seu Crescimento Está Desorganizado e Difícil de Escalar? <br class=\"desktop-only\">O Core360 Traz Controle e Previsibilidade.",
         "core360_porque_subtitle": "Para clínicas com múltiplas especialidades e equipe estruturada que precisam de um sistema integrado para gerenciar a jornada do paciente de ponta a ponta e tomar decisões baseadas em dados.",
         "core360_desafio_title": "Os Desafios de Clínicas em Expansão:",
@@ -287,13 +279,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "core360_faq3_a": "É um painel online, acessível por você e sua equipe, que centraliza as métricas mais importantes em tempo real: leads por campanha, custo por conversão, taxa de agendamento e o ROI por especialidade. Ele transforma dados complexos em insights visuais para uma tomada de decisão rápida e estratégica.",
         "core360_final_cta_title": "Deixe de Adivinhar e Comece a Dominar seu Mercado com Dados.",
         "core360_final_cta_subtitle": "O Plano Core360 é a parceria que sua clínica precisa para escalar de forma inteligente e sustentável. Pronto para ter uma visão 360° do seu crescimento?",
-        "core360_final_cta_btn": "Solicitar Demonstração do Core360",
-        
-        "fullstack_page_title": "Plano Fullstack - A Operação Digital da sua Clínica, por Completo | DentComm",
-        "fullstack_meta_description": "Com o Plano Fullstack, a DentComm assume toda a operação digital da sua clínica. Ideal para quem busca delegação total com confiança e máxima performance.",
+        "fullstack_page_title": "Plano Fullstack: Gestão Completa de Marketing e Vendas | DentComm",
+        "fullstack_meta_description": "Delegue 100% da sua operação de marketing digital com o Plano Fullstack. A DentComm gerencia tudo, da estratégia à pré-venda, para você focar nos pacientes.",
         "fullstack_hero_title": "Plano Fullstack: <span>Foque no seu Paciente,</span> a Operação Digital é Nossa",
         "fullstack_hero_subtitle": "Assumimos completamente a operação digital da sua clínica, da estratégia à execução. Cresça com escala, qualidade, previsibilidade e tempo livre.",
-        "fullstack_hero_cta": "Quero a Gestão Fullstack",
         "fullstack_porque_title": "Sem Tempo para Cuidar do Marketing e das Vendas? <br class=\"desktop-only\">Com o Fullstack, Você Delega com Confiança.",
         "fullstack_porque_subtitle": "Para clínicas com múltiplos dentistas e grupos odontológicos que precisam de uma parceira que assuma a responsabilidade pela geração de resultados, padronização e crescimento em escala.",
         "fullstack_desafio_title": "As Dores de Quem Precisa Delegar:",
@@ -323,12 +312,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "fullstack_faq3_a": "A comunicação é constante e fluida. Designamos um consultor exclusivo para seu projeto que manterá contato diário com sua recepção ou gestor através de canais como WhatsApp ou Slack. Além disso, realizamos reuniões de alinhamento e performance ilimitadas, conforme a necessidade da operação.",
         "fullstack_final_cta_title": "Sua única preocupação será oferecer o melhor atendimento. O resto, pode deixar com a gente.",
         "fullstack_final_cta_subtitle": "O Plano Fullstack é a parceria definitiva para clínicas que buscam crescimento em escala com tranquilidade e confiança. Vamos conversar?",
-        "fullstack_final_cta_btn": "Solicitar Consultoria Fullstack"
     },
     es: {
-        // --- GERAL & INDEX.HTML (ESPANHOL) ---
-        "page_title": "DentComm - Marketing para Dentistas y Clínicas Dentales",
-        "meta_description_index": "Potencia tu clínica dental con las soluciones de marketing digital de DentComm. Atrae más pacientes, construye autoridad y alcanza resultados increíbles.",
+        "page_title": "DentComm: Marketing Dental Enfocado en Resultados",
+        "meta_description_index": "Marketing para dentistas y clínicas. DentComm crea estrategias para atraer pacientes, construir autoridad y generar crecimiento con previsibilidad y ROI.",
         "skip_to_content": "Saltar al contenido principal",
         "nav_sobre": "Sobre Nosotros",
         "nav_beneficios": "Beneficios",
@@ -421,8 +408,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "footer_siga_title": "Sigue a DentComm",
         "footer_copyright": "© {CURRENT_YEAR} DentComm. Todos los derechos reservados.",
         "footer_madewithlove": "Hecho con 💙 para dentistas y clínicas que quieren destacar.",
-        "blog_page_title": "Blog DentComm - Consejos y Estrategias de Marketing Dental",
-        "blog_meta_description": "Sigue el blog de DentComm para obtener consejos, ideas y estrategias avanzadas de marketing digital para dentistas y clínicas dentales.",
+        "blog_page_title": "Blog DentComm | Marketing y Gestión para Clínicas Dentales",
+        "blog_meta_description": "Sigue el blog de DentComm para obtener consejos, ideas y estrategias avanzadas de marketing digital y gestión para dentistas y clínicas dentales.",
         "blog_hero_title": "Blog DentComm",
         "blog_hero_subtitle": "Ideas, consejos y las últimas tendencias en marketing digital para impulsar tu clínica dental.",
         "blog_articles_title": "Nuestros Artículos",
@@ -464,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "sidebar_title_accessible": "Barra Lateral del Blog",
         "footer_sobre_blog_link": "Blog",
         "ver_outros_planos": "Ver todos los planes",
-        "artigo1_seo_title": "Cómo Atraer Más Pacientes a tu Clínica Dental en 2025 | Blog DentComm",
+        "artigo1_seo_title": "Cómo Atraer Pacientes a tu Clínica Dental en 2025 | DentComm",
         "artigo1_seo_desc": "Aprende estrategias eficaces de marketing digital, SEO local y redes sociales para aumentar el flujo de pacientes en tu clínica dental este año.",
         "artigo_author_by": "Por",
         "author_name_dentcomm": "Equipo DentComm",
@@ -496,12 +483,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "tag_atrair_pacientes": "Atraer Pacientes",
         "blog_share_text": "Comparte:",
         "blog_related_title": "También Te Puede Gustar",
-        
-        "base_page_title": "Plan Base - Estructura Digital Esencial | DentComm",
-        "base_meta_description": "El Plan Base de DentComm ofrece la estructura mínima para que los dentistas atraigan pacientes, construyan autoridad digital y entiendan el retorno de sus acciones.",
+        "btn_cta_padrao": "Agendar Análisis Estratégico",
+        "base_page_title": "Plan Base: Estructura Digital para Dentistas | DentComm",
+        "base_meta_description": "Conoce el Plan Base: la solución ideal para dentistas que buscan iniciar su captación de pacientes online con landing page, campañas y ROI claro.",
         "base_hero_title": "Plan Base: <span>La Estructura Esencial</span> para Atraer a Tus Primeros Pacientes",
         "base_hero_subtitle": "Entregamos la estructura mínima para que cualquier dentista construya autoridad digital y entienda, en la práctica, el retorno de sus acciones.",
-        "base_hero_cta": "Quiero el Plan Base",
         "base_porque_title": "¿Comenzando en el Mundo Digital o Necesitando Enfoque? <br class=\"desktop-only\">El Plan Base es el Punto de Partida Correcto.",
         "base_porque_subtitle": "Ideal para dentistas que desean captar pacientes de forma activa, pero necesitan una solución de bajo riesgo, con claridad y sin complejidad.",
         "base_desafio_title": "Los Dolores que el Plan Base Resuelve:",
@@ -529,13 +515,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "base_faq3_a": "De ninguna manera. El objetivo del Plan Base es precisamente ofrecer la estructura y el conocimiento para que no tengas que preocuparte por eso. Nos encargamos de toda la parte técnica y estratégica, y te orientamos en la toma de decisiones.",
         "base_final_cta_title": "Da el Primer Paso Hacia una Agenda Llena y Predecible.",
         "base_final_cta_subtitle": "El Plan Base es la alianza ideal para iniciar tu camino de crecimiento con el pie derecho. ¿Hablamos de tus objetivos?",
-        "base_final_cta_btn": "Hablar con un Especialista",
-
-        "flow_page_title": "Plan Flow - Automatización y Escala para tu Clínica | DentComm",
-        "flow_meta_description": "Eleva el nivel de captación, conversión y gestión del recorrido del paciente con el Plan Flow de DentComm. Ideal para quienes necesitan crecer con control e inteligencia.",
+        "flow_page_title": "Plan Flow: Automatización y Marketing para Clínicas | DentComm",
+        "flow_meta_description": "Evoluciona tu captación de pacientes con el Plan Flow. Ofrecemos automatización, campañas multicanal e inteligencia de datos para escalar tu clínica.",
         "flow_hero_title": "Plan Flow: <span>Escala tu Captación</span> con Automatización e Inteligencia",
         "flow_hero_subtitle": "Ideal para dentistas que ya están en el mundo digital, pero necesitan crecer con control, previsibilidad y una gestión optimizada del recorrido del paciente.",
-        "flow_hero_cta": "Quiero Escalar con el Flow",
         "flow_porque_title": "¿Tu Captación de Pacientes es Inconstante? <br class=\"desktop-only\">El Flow Aporta Previsibilidad y Crecimiento.",
         "flow_porque_subtitle": "Si sientes que estás perdiendo oportunidades por falta de tiempo o automatización y necesitas un método para aumentar el volumen de citas, el Plan Flow es la evolución que tu clínica necesita.",
         "flow_desafio_title": "Los Desafíos que Superamos con el Flow:",
@@ -557,7 +540,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "flow_feat6_title": "Estrategia Comercial y Soporte",
         "flow_feat6_desc": "Proporcionamos guiones personalizados por canal, capacitación para tu equipo interno enfocada en conversión y reenganche, y soporte técnico para ajustes operativos en el CRM y automatizaciones.",
         "flow_faq_title": "Preguntas Frecuentes sobre el Plan Flow",
-        "flow_faq1_q": "Ya tengo un logotipo. ¿Necesito hacer el rebranding?",
+        "flow_faq1_q": "¿Ya tengo un logotipo. Necesito hacer el rebranding?",
         "flow_faq1_a": "El rebranding es un paso estratégico del Flow para asegurar que tu imagen esté alineada con un nuevo nivel de profesionalismo y autoridad. Analizamos tu identidad actual y, juntos, decidimos si es necesario un rediseño completo o solo ajustes puntuales para alcanzar los objetivos.",
         "flow_faq2_q": "¿Qué significa 'precalificación' en WhatsApp?",
         "flow_faq2_a": "Es una automatización que realiza las preguntas iniciales esenciales al paciente (ej: '¿Qué tratamiento buscas?', '¿Eres un paciente nuevo?'), organizando la información incluso antes de que tu equipo comience la atención. Esto ahorra tiempo y califica al lead, permitiendo que tu equipo se enfoque en la conversión.",
@@ -565,13 +548,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "flow_faq3_a": "Ofrecemos sesiones de capacitación en línea (grabadas y/o en vivo) para tu equipo de atención, enfocadas en técnicas de conversión, uso correcto de los guiones, gestión del embudo en el CRM y mejores prácticas para reenganchar pacientes. El objetivo es estandarizar y optimizar la atención para aumentar la tasa de citas.",
         "flow_final_cta_title": "Convierte Leads en Pacientes y la Inconsistencia en Previsibilidad.",
         "flow_final_cta_subtitle": "El Plan Flow es la alianza estratégica que tu clínica necesita para crecer de manera organizada e inteligente. ¿Desbloqueamos tu potencial?",
-        "flow_final_cta_btn": "Agendar Análisis Estratégico",
-        
-        "core360_page_title": "Plan Core360 - El Ecosistema Completo para tu Clínica | DentComm",
-        "core360_meta_description": "Integra marketing, atención, ventas y gestión con el Plan Core360. La solución para clínicas que buscan previsibilidad de agenda y crecimiento sostenible.",
+        "core360_page_title": "Plan Core360: Ecosistema de Marketing Integrado | DentComm",
+        "core360_meta_description": "Integra marketing, ventas y gestión con el Plan Core360 de DentComm. La solución completa para clínicas que buscan escalar con control, datos y previsibilidad.",
         "core360_hero_title": "Plan Core360: <span>El Ecosistema Completo</span> para Dominar tu Mercado",
         "core360_hero_subtitle": "Integra marketing, atención, ventas y gestión. La solución definitiva para clínicas que buscan previsibilidad de agenda y crecimiento sostenible.",
-        "core360_hero_cta": "Dominar con el Core360",
         "core360_porque_title": "¿Tu Crecimiento es Desorganizado y Difícil de Escalar? <br class=\"desktop-only\">Core360 Aporta Control y Previsibilidad.",
         "core360_porque_subtitle": "Para clínicas con múltiples especialidades y un equipo estructurado que necesitan un sistema integrado para gestionar el recorrido del paciente de principio a fin y tomar decisiones basadas en datos.",
         "core360_desafio_title": "Los Desafíos de las Clínicas en Expansión:",
@@ -601,13 +581,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "core360_faq3_a": "Es un panel en línea, accesible para ti y tu equipo, que centraliza las métricas más importantes en tiempo real: leads por campaña, costo por conversión, tasa de citas y el ROI por especialidad. Transforma datos complejos en insights visuales para una toma de decisiones rápida y estratégica.",
         "core360_final_cta_title": "Deja de Adivinar y Comienza a Dominar tu Mercado con Datos.",
         "core360_final_cta_subtitle": "El Plan Core360 es la alianza que tu clínica necesita para escalar de forma inteligente y sostenible. ¿Listo para tener una visión 360° de tu crecimiento?",
-        "core360_final_cta_btn": "Solicitar Demostración del Core360",
-        
-        "fullstack_page_title": "Plan Fullstack - La Operación Digital de tu Clínica, por Completo | DentComm",
-        "fullstack_meta_description": "Con el Plan Fullstack, DentComm asume toda la operación digital de tu clínica. Ideal para quienes buscan delegación total con confianza y máximo rendimiento.",
+        "fullstack_page_title": "Plan Fullstack: Gestión Completa de Marketing y Ventas | DentComm",
+        "fullstack_meta_description": "Delega el 100% de tu operación de marketing digital con el Plan Fullstack. DentComm gestiona todo, desde la estrategia hasta la preventa, para que te enfoques en los pacientes.",
         "fullstack_hero_title": "Plan Fullstack: <span>Enfócate en tu Paciente,</span> la Operación Digital es Nuestra",
         "fullstack_hero_subtitle": "Asumimos completamente la operación digital de tu clínica, desde la estrategia hasta la ejecución. Crece con escala, calidad, previsibilidad y tiempo libre.",
-        "fullstack_hero_cta": "Quiero la Gestión Fullstack",
         "fullstack_porque_title": "¿Sin Tiempo para Ocuparte del Marketing y las Ventas? <br class=\"desktop-only\">Con Fullstack, Delegas con Confianza.",
         "fullstack_porque_subtitle": "Para clínicas con múltiples dentistas y grupos dentales que necesitan un socio que asuma la responsabilidad de generar resultados, estandarización y crecimiento a escala.",
         "fullstack_desafio_title": "Los Dolores de Quien Necesita Delegar:",
@@ -637,7 +614,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "fullstack_faq3_a": "La comunicación es constante y fluida. Asignamos un consultor exclusivo a tu proyecto que mantendrá contacto diario con tu recepción o gerente a través de canales como WhatsApp o Slack. Además, realizamos reuniones ilimitadas de alineación y rendimiento, según las necesidades de la operación.",
         "fullstack_final_cta_title": "Tu única preocupación será ofrecer la mejor atención. El resto, déjalo en nuestras manos.",
         "fullstack_final_cta_subtitle": "El Plan Fullstack es la alianza definitiva para clínicas que buscan un crecimiento a escala con tranquilidad y confianza. ¿Hablamos?",
-        "fullstack_final_cta_btn": "Solicitar Consultoría Fullstack"
     }
   };
 
@@ -652,22 +628,24 @@ document.addEventListener("DOMContentLoaded", function () {
     let pageTitleKey = "page_title"; 
     let metaDescKey = "meta_description_index";
 
-    if (document.body.classList.contains('page-blog')) {
+    const bodyClass = document.body.className;
+
+    if (bodyClass.includes('page-blog')) {
         pageTitleKey = "blog_page_title";
         metaDescKey = "blog_meta_description";
-    } else if (document.body.classList.contains('page-single-post')) {
+    } else if (bodyClass.includes('page-single-post')) {
         pageTitleKey = "artigo1_seo_title";
         metaDescKey = "artigo1_seo_desc";
-    } else if (document.body.classList.contains('page-plano-base')) {
+    } else if (bodyClass.includes('page-plano-base')) {
         pageTitleKey = "base_page_title";
         metaDescKey = "base_meta_description";
-    } else if (document.body.classList.contains('page-plano-flow')) {
+    } else if (bodyClass.includes('page-plano-flow')) {
         pageTitleKey = "flow_page_title";
         metaDescKey = "flow_meta_description";
-    } else if (document.body.classList.contains('page-plano-core360')) {
+    } else if (bodyClass.includes('page-plano-core360')) {
         pageTitleKey = "core360_page_title";
         metaDescKey = "core360_meta_description";
-    } else if (document.body.classList.contains('page-plano-fullstack')) {
+    } else if (bodyClass.includes('page-plano-fullstack')) {
         pageTitleKey = "fullstack_page_title";
         metaDescKey = "fullstack_meta_description";
     }
@@ -779,25 +757,31 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.removeItem('scrollToAnchor'); 
   }
 
-  const elementsToAnimate = document.querySelectorAll(
-    ".hero-content, .plano-lp-hero-content, .section-header, .sobre-content p, " +
-    ".benefit-card, .plano-card, .depoimento-card, .ebook-item, " +
-    ".formulario-contato-col, .footer-column, .footer-bottom-bar, " +
-    ".blog-post-preview, .sidebar-widget, .desafios-col, .solucao-img-col, " +
-    ".feature-card-momentum, .faq-item"
-  );
+  // Animação de entrada (com stagger)
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("animate");
+        if (entry.target.hasAttribute('data-stagger-animation')) {
+            const children = entry.target.querySelectorAll('.animate-init');
+            children.forEach((child, index) => {
+                child.style.transitionDelay = `${index * 100}ms`;
+                child.classList.add('animate');
+            });
+        } else {
+            entry.target.classList.add("animate");
+        }
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.05 }); 
+  }, { threshold: 0.1 }); 
 
-  elementsToAnimate.forEach(el => {
-    el.classList.add("animate-init");
-    observer.observe(el);
+  document.querySelectorAll('.animate-init, [data-stagger-animation]').forEach(el => {
+    if (el.hasAttribute('data-stagger-animation')) {
+        const children = el.querySelectorAll('.animate-init');
+        children.forEach(child => observer.observe(el));
+    } else {
+        observer.observe(el);
+    }
   });
 
   const navToggleBtn = document.getElementById('navToggle');
@@ -832,7 +816,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
                     navLinksForScroll.forEach(l => l.classList.remove("active"));
-                    correspondingLink.classList.add("active");
+                    if(correspondingLink) correspondingLink.classList.add("active");
                     currentActiveFound = true;
                 }
             });

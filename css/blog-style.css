@@ -1,131 +1,68 @@
 /* ==========================================================================
-   blog-style.css - Estilos Específicos para o Blog e Artigos (EDIÇÃO PREMIUM)
+   blog-style.css - Estilos para Blog e Artigos (EDIÇÃO TECH PREMIUM)
    ========================================================================== */
 
-/* ==========================================================================
-   Hero do Blog (blog.html)
-   ========================================================================== */
 .blog-hero {
-    padding: clamp(5rem, 12vh, 7rem) 0;
-    position: relative; color: var(--cor-texto-claro);
     background-color: var(--cor-fundo-escuro);
-    background-image: linear-gradient(60deg, rgba(var(--cor-fundo-escuro-rgb), 0.95) 0%, rgba(var(--cor-fundo-escuro-rgb), 0.7) 100%), url('../midia/blog/blog-hero-bg.jpg');
-    background-size: cover; background-position: center 60%;
+    color: var(--cor-texto-claro);
 }
-.blog-hero-content { position: relative; z-index: 2; }
-.blog-hero h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); color: var(--cor-texto-claro); }
-.blog-hero-subtitle { font-size: clamp(1.1rem, 3vw, 1.3rem); color: var(--cor-texto-secundario-claro); }
+.blog-hero h1 { color: var(--cor-texto-claro); }
+.blog-hero-subtitle { color: var(--cor-texto-secundario-claro); }
 
-/* ==========================================================================
-   Layout Geral do Blog
-   ========================================================================== */
 .blog-layout-container {
-    display: grid; grid-template-columns: 1fr; gap: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
 }
 @media (min-width: 992px) {
     .blog-layout-container { grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr); }
 }
 
-/* ==========================================================================
-   Listagem de Artigos (blog.html)
-   ========================================================================== */
-.blog-posts-column { display: flex; flex-direction: column; gap: 3rem; }
 .blog-post-preview {
-    background-color: var(--cor-fundo-branco); border-radius: var(--raio-borda);
+    background-color: var(--cor-fundo-branco);
+    border-radius: var(--raio-borda);
     box-shadow: var(--sombra-card);
-    overflow: hidden; display: flex; flex-direction: column;
-    transition: var(--transicao-padrao); border: 1px solid var(--cor-borda-sutil);
+    transition: var(--transicao-padrao);
+    border: 1px solid var(--cor-borda-sutil);
 }
-.blog-post-preview:hover { transform: translateY(-8px); box-shadow: var(--sombra-card-hover); }
-.post-preview-image { height: 280px; object-fit: cover; transition: transform 0.4s ease; }
-.blog-post-preview:hover .post-preview-image { transform: scale(1.04); }
-.post-preview-content { padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; }
-.post-meta { margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.blog-post-preview:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--sombra-card-hover);
+}
+.post-preview-image {
+    border-radius: var(--raio-borda) var(--raio-borda) 0 0;
+    height: 280px; object-fit: cover;
+}
+.post-preview-content { padding: 2rem; }
 .post-category {
-    background-color: var(--cor-primaria-muito-clara); color: var(--cor-primaria-escura);
-    padding: 0.3rem 0.8rem; border-radius: 50px; font-weight: 600;
-    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;
+    background-color: rgba(var(--cor-primaria-rgb), 0.1);
+    color: var(--cor-primaria-escura);
+    font-weight: 600;
 }
-.post-date { font-size: 0.85rem; color: var(--cor-texto-secundario-escuro); }
-.post-preview-title { font-size: clamp(1.4rem, 3vw, 1.7rem); margin: 0.5rem 0; }
-.post-preview-title a { color: var(--cor-texto-escuro); }
 .post-preview-title a:hover { color: var(--cor-primaria); }
-.post-preview-excerpt { color: var(--cor-texto-secundario-escuro); margin-bottom: 2rem; flex-grow: 1; }
-.post-read-more { align-self: flex-start; }
 
-/* Paginação */
-.pagination { margin-top: 3.5rem; display: flex; justify-content: center; gap: 0.6rem; }
-.page-numbers {
-    padding: 0.7rem 1.2rem; border: 1px solid var(--cor-borda-sutil);
-    color: var(--cor-texto-secundario-escuro); border-radius: var(--raio-borda);
-    font-weight: 500; transition: var(--transicao-padrao);
-}
-.page-numbers:hover, .page-numbers.current {
-    background-color: var(--cor-primaria); color: #000;
-    border-color: var(--cor-primaria); box-shadow: var(--sombra-glow-primaria);
-}
-
-/* ==========================================================================
-   Barra Lateral do Blog
-   ========================================================================== */
-.blog-sidebar { display: flex; flex-direction: column; gap: 2.5rem; }
 .sidebar-widget {
-    background-color: var(--cor-fundo-claro); padding: 1.8rem;
-    border-radius: var(--raio-borda); border: 1px solid var(--cor-borda-sutil);
+    background-color: var(--cor-fundo-claro);
+    padding: 2rem;
+    border-radius: var(--raio-borda);
+    border: 1px solid var(--cor-borda-sutil);
 }
-.widget-title {
-    font-size: 1.25rem; margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem; border-bottom: 2px solid var(--cor-borda-sutil);
-}
-.widget-categories ul, .widget-recent-posts ul { list-style: none; padding-left: 0; }
+.widget-title { border-bottom: 2px solid var(--cor-borda-sutil); }
 .widget-categories li a, .widget-recent-posts li a {
-    color: var(--cor-texto-secundario-escuro); font-size: 0.95rem;
-    padding: 0.4rem 0; display: block; border-bottom: 1px solid transparent;
+    transition: var(--transicao-padrao);
 }
 .widget-categories li a:hover, .widget-recent-posts li a:hover {
     color: var(--cor-primaria-escura);
-    border-bottom-color: var(--cor-primaria-clara);
+    transform: translateX(4px);
 }
 
-/* ==========================================================================
-   Página de Artigo Individual
-   ========================================================================== */
-.container-article { max-width: 820px; }
-.post-full-header { margin-bottom: 2.5rem; text-align: center; }
-.post-meta-single {
-    margin-bottom: 1.5rem; display: flex; flex-wrap: wrap;
-    align-items: center; justify-content: center; gap: 1.5rem;
+.post-full-content {
+    font-size: 1.15rem;
+    line-height: 1.85;
 }
-.post-full-title { font-size: clamp(2.2rem, 6vw, 3.5rem); margin-bottom: 1rem; }
-.post-author-info { display: flex; align-items: center; justify-content: center; gap: 1rem; }
-.author-avatar { width: 45px; height: 45px; border-radius: var(--raio-borda-circulo); }
-.post-full-image-container { margin: 3rem 0; border-radius: var(--raio-borda); overflow: hidden; }
-.post-full-content { font-size: 1.15rem; line-height: 1.85; }
-.post-full-content h2, .post-full-content h3 { margin-top: 2.5em; margin-bottom: 1em; line-height: 1.3; }
-.post-full-content h2 { font-size: 2rem; }
-.post-full-content h3 { font-size: 1.7rem; }
 .post-full-content blockquote {
-    border-left: 4px solid var(--cor-primaria); padding: 1.5em 2em;
-    margin: 2.5em 0; font-style: italic; font-size: 1.2rem;
+    border-left: 4px solid var(--cor-primaria);
+    padding: 1.5em 2em;
     background-color: var(--cor-fundo-claro);
+    border-radius: 0 var(--raio-borda) var(--raio-borda) 0;
 }
-.post-full-footer {
-    margin-top: 4rem; padding-top: 2rem;
-    border-top: 1px solid var(--cor-borda-sutil);
-    display: flex; flex-direction: column; gap: 1.5rem;
-}
-.post-tags a {
-    background-color: var(--cor-fundo-claro); color: var(--cor-texto-secundario-escuro);
-    padding: 0.4rem 1rem; border-radius: 20px; border: 1px solid var(--cor-borda-sutil);
-}
-.post-tags a:hover { background-color: var(--cor-primaria-muito-clara); border-color: var(--cor-primaria-clara); }
-.share-btn {
-    width: 40px; height: 40px; color: var(--cor-fundo-branco) !important;
-    border-radius: var(--raio-borda-circulo); font-size: 1rem;
-}
-.share-btn:hover { opacity: 0.85; transform: scale(1.08); }
-
-/* Artigos Relacionados */
-.related-posts-section { background-color: var(--cor-fundo-claro); }
-.related-posts-grid .blog-post-preview .post-preview-image { height: 220px; }
-.related-posts-grid .blog-post-preview .post-preview-title { font-size: 1.25rem; }

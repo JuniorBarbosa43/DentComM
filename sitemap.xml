@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.SUAURL.com/index.html</loc>
+  <lastmod>2025-06-11T19:12:55+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.SUAURL.com/planos/plano-base.html</loc>
+  <lastmod>2025-06-11T19:12:55+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.SUAURL.com/planos/plano-flow.html</loc>
+  <lastmod>2025-06-11T19:12:55+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.SUAURL.com/planos/plano-core360.html</loc>
+  <lastmod>2025-06-11T19:12:55+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.SUAURL.com/planos/plano-fullstack.html</loc>
+  <lastmod>2025-06-11T19:12:55+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.SUAURL.com/blog.html</loc>
+  <lastmod>2025-06-11T19:12:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.SUAURL.com/artigos/Como%20Atrair%20Mais%20Pacientes%20para%20sua%20Cl%C3%ADnica%20Odontol%C3%B3gica%20em%202025.html</loc>
+  <lastmod>2025-06-11T19:12:55+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
+</urlset>
